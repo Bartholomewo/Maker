@@ -25,3 +25,13 @@
 - (UIView *(^)(MK_UIVIEW)) com_setup;
 
 @end
+
+@interface UIView (Extention)
+
+/**
+ 获得一条线 或者 一个矩形
+ 扩展函数 该函数需要提供左右/上下内边距 距离父组件距离 高度/宽度颜色 方向
+ */
+- (UIView *(^)(MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_COLOR, LineViewDirection)) ext_line;
+
+@end

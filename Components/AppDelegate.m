@@ -22,7 +22,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [ComponentController new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ComponentController new]];
+    
+    [UINavigationBar appearance].translucent = NO;
     
     return YES;
 }

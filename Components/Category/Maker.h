@@ -13,8 +13,11 @@
 #import "UILabel+Maker.h"
 #import "UIButton+Maker.h"
 #import "UIImageView+Maker.h"
+#import "UITextField+Maker.h"
+
 #import "UIView+Label.h"
 #import "UIView+Button.h"
 #import "UIView+ImageView.h"
+#import "UIView+TextField.h"
 
 #endif /* Maker_h */

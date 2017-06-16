@@ -16,86 +16,65 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    static int count = 0;
+    self.title = @"XX家居";
     
-//    UILabel *label = [[UILabel alloc] init];
-//    label.frame = CGRectMake(20, 40, 100, 40);
-//    label.layer.cornerRadius = 10;
-//    label.layer.masksToBounds = YES;
-//    label.layer.borderColor = [MakerUntil colorWithHexString:@"#C3342E"].CGColor;
-//    label.layer.borderWidth = 2;
-//    label.text = @"Center";
-//    label.textColor = [MakerUntil colorWithHexString:@"#C3342E"];
-//    label.font = [UIFont systemFontOfSize:17 weight:0];
-//    label.textAlignment = NSTextAlignmentCenter;
-//    [self.view addSubview:label];
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     
-    UILabel *label = UILabel.maker
+    UIView *cardView = UIView.maker
     .com_setup(self.view)
-    .com_frame(20, 40, 100 ,40)
-    .com_cornerRadius(10, YES)
-    .com_border(2, @"#C3342E")
-    .com_backgroundColor(@"#F1F1F1")
-    .lab_text(@"Center")
-    .lab_textColor(@"#C3342E")
-    .lab_font(17, 0, nil)
-    .lab_textAlinment(lCenter);
+    .com_frame(20, 20, screenWidth - 40, 450)
+    .com_border(1.0, @"#F1F1F1")
+    .com_cornerRadius(5.0, YES);
+    
+    UIImageView.maker
+    .com_setup(cardView)
+    .com_frame(0, 0, screenWidth-40, 300)
+    .com_contentMode(vToFill)
+    .img_image([UIImage imageNamed:@"6.jpg"]);
+    
+    UILabel.maker
+    .com_setup(cardView)
+    .com_frame(10, 310, screenWidth-60, 50)
+    .lab_text(@"RONZEN纯棉 无任何添加剂 床上春夏被单 床上用品 全面贡缎 欧式风格")
+    .lab_lineBreakMode(lChar)
+    .lab_numberOfSection(2)
+    .lab_font(15, 0.0, nil)
+    .lab_textColor(@"#666666");
+    
+    UILabel.maker
+    .com_setup(cardView)
+    .com_frame(10, 370, screenWidth-60, 15)
+    .lab_text(@"发表于 2017-06-17")
+    .lab_textColor(@"#999999")
+    .lab_font(13, 0.0, nil);
+    
+    UIView.maker
+    .com_setup(cardView)
+    .ext_line(10, 10, 395, 1, @"#F1F1F1", vHorizon);
     
     UIButton.maker
-    .com_setup(self.view)
-    .com_frame(140, 40 ,80 ,40)
-    .com_backgroundColor(@"#4E92DF")
-    .com_cornerRadius(10, YES)
-    .com_tag(1)
-    .btn_font(15, 0, nil)
-    .btn_title(@"Click Me", bNormal)
-    .btn_titleColor(@"#FFFFFF", bNormal)
-    .btn_actionBlock(bTouchUpInside, ^(id sender){
-        count ++;
-        if (count == 4) {
-            count = 1;
-        }
-        if (count == 1) {
-            label.lab_textAlinment(lLeft).lab_text(@"Left");
-        } else if (count == 2) {
-            label.lab_textAlinment(lCenter).lab_text(@"Center");
-        } else if (count == 3) {
-            label.lab_textAlinment(lRight).lab_text(@"Right");
-        }
+    .com_setup(cardView)
+    .com_frame(10, 410, (screenWidth-60)/2-5, 30)
+    .com_backgroundColor(@"#F1F1F1")
+    .com_border(1.0, [UIColor lightGrayColor])
+    .com_cornerRadius(5.0, YES)
+    .btn_title(@"加入购物车", bNormal)
+    .btn_titleColor([UIColor lightGrayColor], bNormal)
+    .btn_font(13, 0.0, nil)
+    .btn_actionBlock(bTouchUpInside, ^(id sender) {
+        NSLog(@"加入购物车");
     });
     
-    NSArray *images = @[[UIImage imageNamed:@"1.jpg"],
-                        [UIImage imageNamed:@"2.jpg"],
-                        [UIImage imageNamed:@"3.jpg"],
-                        [UIImage imageNamed:@"4.jpg"],
-                        [UIImage imageNamed:@"5.jpg"]];
-    UIImageView *imageView2 = UIImageView.maker
-    .com_setup(self.view)
-    .com_frame(20, 100, 200, 150)
-    .com_contentMode(vAspectFit)
-    .img_images(images)
-    .img_animation(0, 1.0);
-    [imageView2 startAnimating];
-    
     UIButton.maker
-    .com_setup(self.view)
-    .com_frame(240, 165, 100, 40)
-    .com_backgroundColor(@"#4E92DF")
-    .com_cornerRadius(10, YES)
-    .com_tag(1)
-    .btn_font(15, 0, nil)
-    .btn_title(@"Stop", bNormal)
+    .com_setup(cardView)
+    .com_frame((screenWidth-60)/2+10, 410, (screenWidth-60)/2-5, 30)
+    .com_backgroundColor(@"#FF8802")
+    .com_cornerRadius(5.0, YES)
+    .btn_title(@"立即下单", bNormal)
     .btn_titleColor(@"#FFFFFF", bNormal)
+    .btn_font(13, 0.0, nil)
     .btn_actionBlock(bTouchUpInside, ^(id sender) {
-        UIButton *button = (UIButton *)sender;
-        if (imageView2.animating) {
-            button.btn_title(@"Start", bNormal);
-            [imageView2 stopAnimating];
-            imageView2.img_image(images[0]);
-        } else {
-            button.btn_title(@"Stop", bNormal);
-            [imageView2 startAnimating];
-        }
+        NSLog(@"立即下单");
     });
     
 }

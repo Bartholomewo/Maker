@@ -52,5 +52,11 @@
 + (UIControlEvents) controlEvents:(ControlEventsOption)option {
     return (UIControlEvents)option;
 }
++ (UITextBorderStyle) textBorderStyle:(TextBorderStyleOption)option {
+    return (UITextBorderStyle)option;
+}
++ (UITextFieldViewMode) textFieldViewMode:(TextFieldViewModeOption)option {
+    return (UITextFieldViewMode)option;
+}
 
 @end

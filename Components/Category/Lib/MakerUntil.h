@@ -64,6 +64,14 @@ typedef NS_ENUM(NSUInteger, ViewContentModeOption) {
     vBottomRight
 };
 
+// 重置UITextBorderStyle
+typedef NS_ENUM(NSUInteger, TextBorderStyleOption) {
+    tNone,
+    tLine,
+    tBezel,
+    tRoundedRect
+};
+
 // 重置UIControlState
 typedef NS_OPTIONS(NSUInteger, ControlStateOption) {
     bNormal = 0,
@@ -75,6 +83,15 @@ typedef NS_OPTIONS(NSUInteger, ControlStateOption) {
     bReserved = 0xFF000000
 };
 
+// 重置UITextFieldViewMode
+typedef NS_ENUM(NSInteger, TextFieldViewModeOption) {
+    tNever,
+    tWhileEditing,
+    tUnlessEditing,
+    tAlways
+};
+
+// 重置UIControlEvents
 typedef NS_OPTIONS(NSUInteger, ControlEventsOption) {
     bTouchDown                                         = 1 <<  0,      // on all touch downs
     bTouchDownRepeat                                   = 1 <<  1,      // on multiple touchdowns (tap count > 1)
@@ -96,6 +113,12 @@ typedef NS_OPTIONS(NSUInteger, ControlEventsOption) {
     bApplicationReserved                               = 0x0F000000,  // range available for application use
     bSystemReserved                                    = 0xF0000000,  // range reserved for internal framework use
     bAllEvents                                         = 0xFFFFFFFF
+};
+
+// 横向或竖向
+typedef NS_ENUM(NSUInteger, LineViewDirection) {
+    vHorizon,
+    vVertical
 };
 
 // Button点击事件
@@ -120,5 +143,12 @@ typedef void(^ButtonPressedBlock)(UIButton *button);
 
 // UIControlEvents
 + (UIControlEvents) controlEvents:(ControlEventsOption)option;
+
+// UITextBorderStyle
++ (UITextBorderStyle) textBorderStyle:(TextBorderStyleOption)option;
+
+// UITextFieldViewMode
++ (UITextFieldViewMode) textFieldViewMode:(TextFieldViewModeOption)option;
+
 
 @end
