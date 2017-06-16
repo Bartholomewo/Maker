@@ -27,7 +27,7 @@ UILabel.maker
 > 书写格式先编写com的功能，然后编写lab 或者 btn的功能。
 
 ```Objective-C
-UIButton.maker
+UIButton button = UIButton.maker
 .com_setup(self.view)
 .com_frame(100, 300 ,100 ,100)
 .com_backgroundColor(@"#dddddd")
@@ -58,7 +58,7 @@ label.font = [UIFont systemFontOfSize:17 weight:2.0];
 label.textAlignment = NSTextAlignmentCenter;
 [self.view addSubview:label];
 
-UILabel.maker
+UILabel *label = UILabel.maker
 .com_setup(self.view)
 .com_frame(100, 100, 100 ,100)
 .com_cornerRadius(10, YES)
