@@ -15,34 +15,44 @@ Maker 是一个使用链式语法实现UIKit控件的Category，快速开发，�
 * UIImageView
 2. 怎样使用
 ```Objective-C
-UILabel.maker
+UILabel *label = UILabel.maker
 .com_setup(self.view)
-.com_frame(100, 100, 100 ,100)
+.com_frame(20, 40, 100 ,40)
 .com_cornerRadius(10, YES)
-.com_border(10, @"123456")
-.com_backgroundColor(@"#f1f1f1")
-.lab_text(@"hellolad")
-.lab_textColor(@"#cccccc")
-.lab_font(17, 2.0, nil)
-.lab_textAlinment(NSTextAlignmentCenter);
+.com_border(2, @"#C3342E")
+.com_backgroundColor(@"#F1F1F1")
+.lab_text(@"Center")
+.lab_textColor(@"#C3342E")
+.lab_font(17, 0, nil)
+.lab_textAlinment(lCenter);
 ```
 > 注意：Maker里对应的控件有不同的命名方式：com---Common，lab---UILabel, btn---Button, 
 > 书写格式先编写com的功能，然后编写lab 或者 btn的功能。
 
 ```Objective-C
-UIButton button = UIButton.maker
+UIButton.maker
 .com_setup(self.view)
-.com_frame(100, 300 ,100 ,100)
-.com_backgroundColor(@"#dddddd")
+.com_frame(140, 40 ,80 ,40)
+.com_backgroundColor(@"#4E92DF")
 .com_cornerRadius(10, YES)
 .com_tag(1)
-.com_alpha(0.5)
-.btn_font(10, 0, nil)
-.btn_title(@"点击我", UIControlStateNormal)
-.btn_titleColor(@"#aaaaaa", UIControlStateNormal)
-.btn_actionBlock(UIControlEventTouchUpInside, ^(id sender){
-    NSLog(@"action_block");
+.btn_font(15, 0, nil)
+.btn_title(@"Click Me", bNormal)
+.btn_titleColor(@"#FFFFFF", bNormal)
+.btn_actionBlock(bTouchUpInside, ^(id sender){
+    count ++;
+    if (count == 4) {
+        count = 1;
+    }
+    if (count == 1) {
+        label.lab_textAlinment(lLeft).lab_text(@"Left");
+    } else if (count == 2) {
+        label.lab_textAlinment(lCenter).lab_text(@"Center");
+    } else if (count == 3) {
+        label.lab_textAlinment(lRight).lab_text(@"Right");
+    }
 });
+
 
 ```
 3. 和正常的手写控件的对比
@@ -53,10 +63,10 @@ label.frame = CGRectMake(100, 100, 100, 100);
 label.layer.cornerRadius = 10;
 label.layer.masksToBounds = YES;
 label.layer.borderWidth = 10;
-label.layer.borderColor = [MakerUntil colorWithHexString:@"#123456"].CGColor;
-label.backgroundColor = [MakerUntil colorWithHexString:@"#f1f1f1"];
-label.text = @"hellolad";
-label.textColor = [MakerUntil colorWithHexString:@"#cccccc"];
+label.layer.borderColor = [MakerUntil colorWithHexString:@"#C3342E"].CGColor;
+label.backgroundColor = [MakerUntil colorWithHexString:@"#F1F1F1"];
+label.text = @"Label";
+label.textColor = [MakerUntil colorWithHexString:@"#FFFFFF"];
 label.font = [UIFont systemFontOfSize:17 weight:2.0];
 label.textAlignment = NSTextAlignmentCenter;
 [self.view addSubview:label];
@@ -65,11 +75,11 @@ UILabel *label = UILabel.maker
 .com_setup(self.view)
 .com_frame(100, 100, 100 ,100)
 .com_cornerRadius(10, YES)
-.com_border(10, @"123456")
-.com_backgroundColor(@"#f1f1f1")
-.lab_text(@"hellolad")
-.lab_textColor(@"#cccccc")
+.com_border(10, @"#C3342E")
+.com_backgroundColor(@"#F1F1F1")
+.lab_text(@"Label")
+.lab_textColor(@"#FFFFFF")
 .lab_font(17, 2.0, nil)
-.lab_textAlinment(NSTextAlignmentCenter);
+.lab_textAlinment(lCenter);
 ```
 4. 本版本只是测试版本，肯定有bug，同时功能也比较单一，其他强大功能正在积极开发中，希望大家能够支持。
