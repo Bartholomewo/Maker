@@ -9,6 +9,7 @@ Maker是一个使用链式语法实现的UIKit控件的小小的框架，轻松�
 * UILabel
 * UIButton
 * UIImageView
+* UITextField
 * (Coding... ...)
 
 
