@@ -37,5 +37,20 @@
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
++ (NSLineBreakMode) lineBreakMode:(LineBreakModeOption)option {
+    return (NSLineBreakMode)option;
+}
++ (NSTextAlignment) textAlignment:(TextAlignmentOption)option {
+    return (NSTextAlignment)option;
+}
++ (UIViewContentMode) viewContentMode:(ViewContentModeOption)option {
+    return (UIViewContentMode)option;
+}
++ (UIControlState) controlState:(ControlStateOption)option {
+    return (UIControlState)option;
+}
++ (UIControlEvents) controlEvents:(ControlEventsOption)option {
+    return (UIControlEvents)option;
+}
 
 @end

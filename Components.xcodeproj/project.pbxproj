@@ -15,6 +15,11 @@
 		F51799FB1EF14B4900ECDAE4 /* NSNumber+UIDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = F51799FA1EF14B4900ECDAE4 /* NSNumber+UIDesign.m */; };
 		F5179A061EF2133600ECDAE4 /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5179A051EF2133600ECDAE4 /* UIView+Maker.m */; };
 		F542C74D1EF2270100253210 /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F542C74C1EF2270100253210 /* MakerUntil.m */; };
+		F558BCD51EF3D13C00B10AC1 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD01EF3D13C00B10AC1 /* 1.jpg */; };
+		F558BCD61EF3D13C00B10AC1 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD11EF3D13C00B10AC1 /* 2.jpg */; };
+		F558BCD71EF3D13C00B10AC1 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD21EF3D13C00B10AC1 /* 3.jpg */; };
+		F558BCD81EF3D13C00B10AC1 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD31EF3D13C00B10AC1 /* 4.jpg */; };
+		F558BCD91EF3D13C00B10AC1 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD41EF3D13C00B10AC1 /* 5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		F5179A051EF2133600ECDAE4 /* UIView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
 		F542C74B1EF2270100253210 /* MakerUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
 		F542C74C1EF2270100253210 /* MakerUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
+		F558BCD01EF3D13C00B10AC1 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F558BCD11EF3D13C00B10AC1 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F558BCD21EF3D13C00B10AC1 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		F558BCD31EF3D13C00B10AC1 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		F558BCD41EF3D13C00B10AC1 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 		F51799F81EF14B4900ECDAE4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				F558BCD01EF3D13C00B10AC1 /* 1.jpg */,
+				F558BCD11EF3D13C00B10AC1 /* 2.jpg */,
+				F558BCD21EF3D13C00B10AC1 /* 3.jpg */,
+				F558BCD31EF3D13C00B10AC1 /* 4.jpg */,
+				F558BCD41EF3D13C00B10AC1 /* 5.jpg */,
 				F51799F91EF14B4900ECDAE4 /* NSNumber+UIDesign.h */,
 				F51799FA1EF14B4900ECDAE4 /* NSNumber+UIDesign.m */,
 			);
@@ -166,7 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F558BCD81EF3D13C00B10AC1 /* 4.jpg in Resources */,
+				F558BCD71EF3D13C00B10AC1 /* 3.jpg in Resources */,
+				F558BCD51EF3D13C00B10AC1 /* 1.jpg in Resources */,
 				F51799EB1EF14A2B00ECDAE4 /* LaunchScreen.storyboard in Resources */,
+				F558BCD91EF3D13C00B10AC1 /* 5.jpg in Resources */,
+				F558BCD61EF3D13C00B10AC1 /* 2.jpg in Resources */,
 				F51799E81EF14A2B00ECDAE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -67,6 +67,12 @@
         return self;
     };
 }
+- (UIView *(^)(ViewContentModeOption)) com_contentMode {
+    return ^(ViewContentModeOption mode) {
+        self.contentMode = [MakerUntil viewContentMode:mode];
+        return self;
+    };
+}
 - (UIView *(^)(MK_BOOL)) com_userInterface {
     return ^(MK_BOOL flag) {
         self.userInteractionEnabled = flag;
@@ -83,20 +89,24 @@
 - (UILabel *(^)(MK_STRING)) lab_text { MK_RETURNNIL; }
 - (UILabel *(^)(MK_COLOR)) lab_textColor { MK_RETURNNIL; }
 - (UILabel *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) lab_font { MK_RETURNNIL; }
-- (UILabel *(^)(MK_TEXTALIGNMENT)) lab_textAlinment { MK_RETURNNIL; }
-- (UILabel *(^)(MK_LINEBREAKMODE)) lab_lineBreakMode { MK_RETURNNIL; }
+- (UILabel *(^)(TextAlignmentOption)) lab_textAlinment { MK_RETURNNIL; }
+- (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode { MK_RETURNNIL; }
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection { MK_RETURNNIL; }
 - (UILabel *(^)(MK_BOOL))lab_enabled { MK_RETURNNIL; }
 
-- (UIButton *(^)(MK_STRING, MK_CONTROLSTATE)) btn_title { MK_RETURNNIL; }
-- (UIButton *(^)(MK_COLOR, MK_CONTROLSTATE))btn_titleColor { MK_RETURNNIL; }
-- (UIButton *(^)(MK_UIIMAGE, MK_CONTROLSTATE, MK_BOOL)) btn_image { MK_RETURNNIL; }
+- (UIButton *(^)(MK_STRING, ControlStateOption)) btn_title { MK_RETURNNIL; }
+- (UIButton *(^)(MK_COLOR, ControlStateOption))btn_titleColor { MK_RETURNNIL; }
+- (UIButton *(^)(MK_UIIMAGE, ControlStateOption, MK_BOOL)) btn_image { MK_RETURNNIL; }
 - (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font { MK_RETURNNIL; }
 - (UIButton *(^)(UIEdgeInsets, UIEdgeInsetsOption)) btn_insets { MK_RETURNNIL; }
 - (UIButton *(^)(MK_BOOL)) btn_selected { MK_RETURNNIL; }
 - (UIButton *(^)(MK_BOOL)) btn_enabled { MK_RETURNNIL; }
-- (UIButton *(^)(id, SEL, UIControlEvents)) btn_action { MK_RETURNNIL; }
-- (UIButton *(^)(UIControlEvents, ButtonPressedBlock))btn_actionBlock { MK_RETURNNIL; }
+- (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action { MK_RETURNNIL; }
+- (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock { MK_RETURNNIL; }
+
+- (UIImageView *(^)(MK_UIIMAGE)) img_image { MK_RETURNNIL; }
+- (UIImageView *(^)(NSArray <UIImage*> *)) img_images { MK_RETURNNIL; }
+- (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation { MK_RETURNNIL; }
 
 @end
 
@@ -128,20 +138,20 @@
         return self;
     };
 }
-- (UILabel *(^)(MK_TEXTALIGNMENT)) lab_textAlinment {
-    return ^(MK_TEXTALIGNMENT align) {
-        self.textAlignment = align;
+- (UILabel *(^)(TextAlignmentOption)) lab_textAlinment {
+    return ^(TextAlignmentOption align) {
+        self.textAlignment = [MakerUntil textAlignment:align];
         return self;
     };
 }
-- (UILabel *(^)(MK_LINEBREAKMODE)) lab_lineBreakMode {
-    return ^(MK_LINEBREAKMODE mode) {
-        self.lineBreakMode = mode;
+- (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode {
+    return ^(LineBreakModeOption mode) {
+        self.lineBreakMode = [MakerUntil lineBreakMode:mode];
         return self;
     };
 }
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection {
-    return ^(MK_LINEBREAKMODE line) {
+    return ^(MK_INTEGER line) {
         self.numberOfLines = line;
         return self;
     };
@@ -171,28 +181,28 @@
     return objc_getAssociatedObject(self, buttonPressedKey);
 }
 
-- (UIButton *(^)(MK_STRING, MK_CONTROLSTATE)) btn_title {
-    return ^(MK_STRING title, MK_CONTROLSTATE state) {
-        [self setTitle:title forState:state];
+- (UIButton *(^)(MK_STRING, ControlStateOption)) btn_title {
+    return ^(MK_STRING title, ControlStateOption state) {
+        [self setTitle:title forState:[MakerUntil controlState:state]];
         return self;
     };
 }
-- (UIButton *(^)(MK_COLOR, MK_CONTROLSTATE)) btn_titleColor {
-    return ^(MK_COLOR color, MK_CONTROLSTATE state) {
+- (UIButton *(^)(MK_COLOR, ControlStateOption)) btn_titleColor {
+    return ^(MK_COLOR color, ControlStateOption state) {
         if ([color isKindOfClass:[UIColor class]]) {
-            [self setTitleColor:(UIColor *)color forState:state];
+            [self setTitleColor:(UIColor *)color forState:[MakerUntil controlState:state]];
         } else {
-            [self setTitleColor:[MakerUntil colorWithHexString:color] forState:state];
+            [self setTitleColor:[MakerUntil colorWithHexString:color] forState:[MakerUntil controlState:state]];
         }
         return self;
     };
 }
-- (UIButton *(^)(MK_UIIMAGE, MK_CONTROLSTATE, MK_BOOL)) btn_image {
-    return ^(MK_UIIMAGE image, MK_CONTROLSTATE state, MK_BOOL isBack) {
+- (UIButton *(^)(MK_UIIMAGE, ControlStateOption, MK_BOOL)) btn_image {
+    return ^(MK_UIIMAGE image, ControlStateOption state, MK_BOOL isBack) {
         if (isBack) {
-            [self setBackgroundImage:image forState:state];
+            [self setBackgroundImage:image forState:[MakerUntil controlState:state]];
         } else {
-            [self setImage:image forState:state];
+            [self setImage:image forState:[MakerUntil controlState:state]];
         }
         return self;
     };
@@ -222,19 +232,19 @@
         return self;
     };
 }
-- (UIButton *(^)(id, SEL, UIControlEvents)) btn_action {
-    return ^(id target, SEL sel, UIControlEvents events) {
-        [self addTarget:target action:sel forControlEvents:events];
+- (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action {
+    return ^(id target, SEL sel, ControlEventsOption events) {
+        [self addTarget:target action:sel forControlEvents:[MakerUntil controlEvents:events]];
         return self;
     };
 }
-- (UIButton *(^)(UIControlEvents, ButtonPressedBlock))btn_actionBlock {
-    return ^(UIControlEvents events, ButtonPressedBlock buttonPressedBlock) {
+- (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock {
+    return ^(ControlEventsOption events, ButtonPressedBlock buttonPressedBlock) {
         if (!buttonPressedBlock) {
             return self;
         }
         self.buttonPressedBlock = buttonPressedBlock;
-        [self addTarget:self action:@selector(buttonPressed:) forControlEvents:events];
+        [self addTarget:self action:@selector(buttonPressed:) forControlEvents:[MakerUntil controlEvents:events]];
         return self;
     };
 }
@@ -244,5 +254,30 @@
     }
 }
 
+
+@end
+
+
+@implementation UIImageView (Maker)
+
+- (UIImageView *(^)(MK_UIIMAGE)) img_image {
+    return ^(MK_UIIMAGE image) {
+        self.image = image;
+        return self;
+    };
+}
+- (UIImageView *(^)(NSArray <UIImage*> *)) img_images {
+    return ^(NSArray <UIImage*> *images) {
+        self.animationImages = images;
+        return self;
+    };
+}
+- (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation {
+    return ^(MK_TIMEINTERVAL repeat, MK_INTEGER duration) {
+        self.animationRepeatCount = repeat;
+        self.animationDuration = duration;
+        return self;
+    };
+}
 
 @end

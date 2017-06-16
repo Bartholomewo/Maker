@@ -21,6 +21,7 @@
 - (UIView *(^)(MK_FLOAT, MK_BOOL)) com_cornerRadius;
 - (UIView *(^)(MK_FLOAT, MK_COLOR)) com_border;
 - (UIView *(^)(MK_INTEGER)) com_tag;
+- (UIView *(^)(ViewContentModeOption)) com_contentMode;
 - (UIView *(^)(MK_BOOL)) com_userInterface;
 - (UIView *(^)(MK_UIVIEW)) com_setup;
 
@@ -30,23 +31,29 @@
 - (UILabel *(^)(MK_STRING)) lab_text;
 - (UILabel *(^)(MK_COLOR)) lab_textColor;
 - (UILabel *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) lab_font;
-- (UILabel *(^)(MK_TEXTALIGNMENT)) lab_textAlinment;
-- (UILabel *(^)(MK_LINEBREAKMODE)) lab_lineBreakMode;
+- (UILabel *(^)(TextAlignmentOption)) lab_textAlinment;
+- (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode;
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection;
 - (UILabel *(^)(MK_BOOL)) lab_enabled;
 
 
 
 #pragma mark UIButton
-- (UIButton *(^)(MK_STRING, MK_CONTROLSTATE)) btn_title;
-- (UIButton *(^)(MK_COLOR, MK_CONTROLSTATE)) btn_titleColor;
-- (UIButton *(^)(MK_UIIMAGE, MK_CONTROLSTATE, MK_BOOL)) btn_image;
+- (UIButton *(^)(MK_STRING, ControlStateOption)) btn_title;
+- (UIButton *(^)(MK_COLOR, ControlStateOption)) btn_titleColor;
+- (UIButton *(^)(MK_UIIMAGE, ControlStateOption, MK_BOOL)) btn_image;
 - (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font;
 - (UIButton *(^)(MK_BOOL)) btn_selected;
 - (UIButton *(^)(MK_BOOL)) btn_enabled;
 - (UIButton *(^)(UIEdgeInsets, UIEdgeInsetsOption)) btn_insets;
-- (UIButton *(^)(id, SEL, UIControlEvents)) btn_action;
-- (UIButton *(^)(UIControlEvents, ButtonPressedBlock))btn_actionBlock;
+- (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action;
+- (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock;
+
+
+#pragma mark UIImageView
+- (UIImageView *(^)(MK_UIIMAGE)) img_image;
+- (UIImageView *(^)(NSArray <UIImage*> *)) img_images;
+- (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation;
 
 @end
 
@@ -55,8 +62,12 @@
 @end
 
 
-
 @interface UIButton (Maker)
 @property (nonatomic, copy) ButtonPressedBlock buttonPressedBlock;
+
+@end
+
+
+@interface UIImageView (Maker)
 
 @end
