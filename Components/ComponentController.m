@@ -7,7 +7,7 @@
 //
 
 #import "ComponentController.h"
-#import "UIView+Maker.h"
+#import "Maker.h"
 @interface ComponentController ()
 
 @end
@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     static int count = 0;
+    
+//    UILabel *label = [[UILabel alloc] init];
+//    label.frame = CGRectMake(20, 40, 100, 40);
+//    label.layer.cornerRadius = 10;
+//    label.layer.masksToBounds = YES;
+//    label.layer.borderColor = [MakerUntil colorWithHexString:@"#C3342E"].CGColor;
+//    label.layer.borderWidth = 2;
+//    label.text = @"Center";
+//    label.textColor = [MakerUntil colorWithHexString:@"#C3342E"];
+//    label.font = [UIFont systemFontOfSize:17 weight:0];
+//    label.textAlignment = NSTextAlignmentCenter;
+//    [self.view addSubview:label];
     
     UILabel *label = UILabel.maker
     .com_setup(self.view)

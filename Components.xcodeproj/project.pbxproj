@@ -13,13 +13,19 @@
 		F51799EB1EF14A2B00ECDAE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51799E91EF14A2B00ECDAE4 /* LaunchScreen.storyboard */; };
 		F51799F41EF14A6600ECDAE4 /* ComponentController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51799F31EF14A6600ECDAE4 /* ComponentController.m */; };
 		F51799FB1EF14B4900ECDAE4 /* NSNumber+UIDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = F51799FA1EF14B4900ECDAE4 /* NSNumber+UIDesign.m */; };
-		F5179A061EF2133600ECDAE4 /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5179A051EF2133600ECDAE4 /* UIView+Maker.m */; };
-		F542C74D1EF2270100253210 /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F542C74C1EF2270100253210 /* MakerUntil.m */; };
 		F558BCD51EF3D13C00B10AC1 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD01EF3D13C00B10AC1 /* 1.jpg */; };
 		F558BCD61EF3D13C00B10AC1 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD11EF3D13C00B10AC1 /* 2.jpg */; };
 		F558BCD71EF3D13C00B10AC1 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD21EF3D13C00B10AC1 /* 3.jpg */; };
 		F558BCD81EF3D13C00B10AC1 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD31EF3D13C00B10AC1 /* 4.jpg */; };
 		F558BCD91EF3D13C00B10AC1 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F558BCD41EF3D13C00B10AC1 /* 5.jpg */; };
+		F5FD12C81EF4210D00273E59 /* UIView+Button.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12B71EF4210D00273E59 /* UIView+Button.m */; };
+		F5FD12C91EF4210D00273E59 /* UIView+ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12B91EF4210D00273E59 /* UIView+ImageView.m */; };
+		F5FD12CA1EF4210D00273E59 /* UIView+Label.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12BB1EF4210D00273E59 /* UIView+Label.m */; };
+		F5FD12CB1EF4210D00273E59 /* UIButton+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12BE1EF4210D00273E59 /* UIButton+Maker.m */; };
+		F5FD12CC1EF4210D00273E59 /* UIImageView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12C01EF4210D00273E59 /* UIImageView+Maker.m */; };
+		F5FD12CD1EF4210D00273E59 /* UILabel+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12C21EF4210D00273E59 /* UILabel+Maker.m */; };
+		F5FD12CE1EF4210D00273E59 /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12C41EF4210D00273E59 /* UIView+Maker.m */; };
+		F5FD12CF1EF4210D00273E59 /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD12C71EF4210D00273E59 /* MakerUntil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,15 +40,28 @@
 		F51799F31EF14A6600ECDAE4 /* ComponentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentController.m; sourceTree = "<group>"; };
 		F51799F91EF14B4900ECDAE4 /* NSNumber+UIDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+UIDesign.h"; sourceTree = "<group>"; };
 		F51799FA1EF14B4900ECDAE4 /* NSNumber+UIDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+UIDesign.m"; sourceTree = "<group>"; };
-		F5179A041EF2133600ECDAE4 /* UIView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Maker.h"; sourceTree = "<group>"; };
-		F5179A051EF2133600ECDAE4 /* UIView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
-		F542C74B1EF2270100253210 /* MakerUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
-		F542C74C1EF2270100253210 /* MakerUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
 		F558BCD01EF3D13C00B10AC1 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F558BCD11EF3D13C00B10AC1 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		F558BCD21EF3D13C00B10AC1 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		F558BCD31EF3D13C00B10AC1 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		F558BCD41EF3D13C00B10AC1 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		F5FD12A81EF41E6800273E59 /* Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maker.h; sourceTree = "<group>"; };
+		F5FD12B61EF4210D00273E59 /* UIView+Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Button.h"; sourceTree = "<group>"; };
+		F5FD12B71EF4210D00273E59 /* UIView+Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Button.m"; sourceTree = "<group>"; };
+		F5FD12B81EF4210D00273E59 /* UIView+ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ImageView.h"; sourceTree = "<group>"; };
+		F5FD12B91EF4210D00273E59 /* UIView+ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ImageView.m"; sourceTree = "<group>"; };
+		F5FD12BA1EF4210D00273E59 /* UIView+Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Label.h"; sourceTree = "<group>"; };
+		F5FD12BB1EF4210D00273E59 /* UIView+Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Label.m"; sourceTree = "<group>"; };
+		F5FD12BD1EF4210D00273E59 /* UIButton+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Maker.h"; sourceTree = "<group>"; };
+		F5FD12BE1EF4210D00273E59 /* UIButton+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Maker.m"; sourceTree = "<group>"; };
+		F5FD12BF1EF4210D00273E59 /* UIImageView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Maker.h"; sourceTree = "<group>"; };
+		F5FD12C01EF4210D00273E59 /* UIImageView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Maker.m"; sourceTree = "<group>"; };
+		F5FD12C11EF4210D00273E59 /* UILabel+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Maker.h"; sourceTree = "<group>"; };
+		F5FD12C21EF4210D00273E59 /* UILabel+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Maker.m"; sourceTree = "<group>"; };
+		F5FD12C31EF4210D00273E59 /* UIView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Maker.h"; sourceTree = "<group>"; };
+		F5FD12C41EF4210D00273E59 /* UIView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
+		F5FD12C61EF4210D00273E59 /* MakerUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
+		F5FD12C71EF4210D00273E59 /* MakerUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +133,49 @@
 		F5179A021EF212F200ECDAE4 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				F5179A041EF2133600ECDAE4 /* UIView+Maker.h */,
-				F5179A051EF2133600ECDAE4 /* UIView+Maker.m */,
-				F542C74B1EF2270100253210 /* MakerUntil.h */,
-				F542C74C1EF2270100253210 /* MakerUntil.m */,
+				F5FD12B51EF4210D00273E59 /* Base */,
+				F5FD12BC1EF4210D00273E59 /* Comments */,
+				F5FD12C51EF4210D00273E59 /* Lib */,
+				F5FD12A81EF41E6800273E59 /* Maker.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F5FD12B51EF4210D00273E59 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD12B61EF4210D00273E59 /* UIView+Button.h */,
+				F5FD12B71EF4210D00273E59 /* UIView+Button.m */,
+				F5FD12B81EF4210D00273E59 /* UIView+ImageView.h */,
+				F5FD12B91EF4210D00273E59 /* UIView+ImageView.m */,
+				F5FD12BA1EF4210D00273E59 /* UIView+Label.h */,
+				F5FD12BB1EF4210D00273E59 /* UIView+Label.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F5FD12BC1EF4210D00273E59 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD12BD1EF4210D00273E59 /* UIButton+Maker.h */,
+				F5FD12BE1EF4210D00273E59 /* UIButton+Maker.m */,
+				F5FD12BF1EF4210D00273E59 /* UIImageView+Maker.h */,
+				F5FD12C01EF4210D00273E59 /* UIImageView+Maker.m */,
+				F5FD12C11EF4210D00273E59 /* UILabel+Maker.h */,
+				F5FD12C21EF4210D00273E59 /* UILabel+Maker.m */,
+				F5FD12C31EF4210D00273E59 /* UIView+Maker.h */,
+				F5FD12C41EF4210D00273E59 /* UIView+Maker.m */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		F5FD12C51EF4210D00273E59 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD12C61EF4210D00273E59 /* MakerUntil.h */,
+				F5FD12C71EF4210D00273E59 /* MakerUntil.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +254,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FD12CB1EF4210D00273E59 /* UIButton+Maker.m in Sources */,
+				F5FD12CE1EF4210D00273E59 /* UIView+Maker.m in Sources */,
+				F5FD12C81EF4210D00273E59 /* UIView+Button.m in Sources */,
 				F51799E01EF14A2B00ECDAE4 /* AppDelegate.m in Sources */,
 				F51799DD1EF14A2B00ECDAE4 /* main.m in Sources */,
+				F5FD12C91EF4210D00273E59 /* UIView+ImageView.m in Sources */,
 				F51799FB1EF14B4900ECDAE4 /* NSNumber+UIDesign.m in Sources */,
-				F5179A061EF2133600ECDAE4 /* UIView+Maker.m in Sources */,
+				F5FD12CC1EF4210D00273E59 /* UIImageView+Maker.m in Sources */,
 				F51799F41EF14A6600ECDAE4 /* ComponentController.m in Sources */,
-				F542C74D1EF2270100253210 /* MakerUntil.m in Sources */,
+				F5FD12CA1EF4210D00273E59 /* UIView+Label.m in Sources */,
+				F5FD12CD1EF4210D00273E59 /* UILabel+Maker.m in Sources */,
+				F5FD12CF1EF4210D00273E59 /* MakerUntil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
