@@ -5,6 +5,8 @@ Maker 是一个使用链式语法实现UIKit控件的Category，快速开发，�
 
 * 导入UIView + Maker即可
 
+
+
 ## 介绍
 1. 当前Maker支持:
 * UIView
@@ -70,4 +72,6 @@ UILabel *label = UILabel.maker
 .lab_font(17, 2.0, nil)
 .lab_textAlinment(NSTextAlignmentCenter);
 ```
-4. 希望可以帮到大家，同时本版本只是测试版本，肯定有bug，同时功能也比较单一，其他强大功能正在积极开发中，希望大家支持。
+4. 示例
+![Image](http://chuantu.biz/t5/108/1497605133x2890173705.png)
+5. 希望可以帮到大家，同时本版本只是测试版本，肯定有bug，同时功能也比较单一，其他强大功能正在积极开发中，希望大家支持。
