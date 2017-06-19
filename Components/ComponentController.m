@@ -50,7 +50,8 @@
     
     UIView.maker
     .com_setup(cardView)
-    .ext_line(10, 10, 395, 1, @"#F1F1F1", vHorizon);
+    .com_backgroundColor(@"#F1F1F1")
+    .ext_drawRect(10, 10, 395, 1, vHorizon);
     
     UIButton.maker
     .com_setup(cardView)

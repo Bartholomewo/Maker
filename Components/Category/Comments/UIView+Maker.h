@@ -30,8 +30,8 @@
 
 /**
  获得一条线 或者 一个矩形
- 扩展函数 该函数需要提供左右/上下内边距 距离父组件距离 高度/宽度颜色 方向
+ 左/上边距   右/下边距   与父组件的距离   宽/高   颜色   方向
  */
-- (UIView *(^)(MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_COLOR, LineViewDirection)) ext_line;
+- (UIView *(^)(MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT, LineViewDirection)) ext_drawRect;
 
 @end

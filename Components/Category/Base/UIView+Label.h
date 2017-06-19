@@ -14,7 +14,7 @@
 - (UILabel *(^)(MK_STRING)) lab_text;
 - (UILabel *(^)(MK_COLOR)) lab_textColor;
 - (UILabel *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) lab_font;
-- (UILabel *(^)(TextAlignmentOption)) lab_textAlinment;
+- (UILabel *(^)(TextAlignmentOption)) lab_textAlignment;
 - (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode;
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection;
 - (UILabel *(^)(MK_BOOL)) lab_enabled;

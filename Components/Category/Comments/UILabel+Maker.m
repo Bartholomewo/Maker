@@ -35,7 +35,7 @@
         return self;
     };
 }
-- (UILabel *(^)(TextAlignmentOption)) lab_textAlinment {
+- (UILabel *(^)(TextAlignmentOption)) lab_textAlignment {
     return ^(TextAlignmentOption align) {
         self.textAlignment = [MakerUntil textAlignment:align];
         return self;
