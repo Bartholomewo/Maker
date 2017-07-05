@@ -18,5 +18,7 @@
 - (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode;
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection;
 - (UILabel *(^)(MK_BOOL)) lab_enabled;
+- (UILabel *(^)(MK_BOOL))lab_adjust;
+- (UILabel *) lab_end;
 
 @end

@@ -59,6 +59,15 @@
         return self;
     };
 }
+- (UILabel *(^)(MK_BOOL))lab_adjust {
+    return ^(MK_BOOL flag) {
+        self.adjustsFontSizeToFitWidth = flag;
+        return self;
+    };
+}
+- (UILabel *)lab_end {
+    return self;
+}
 
 
 @end

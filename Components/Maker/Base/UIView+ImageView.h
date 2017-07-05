@@ -14,5 +14,6 @@
 - (UIImageView *(^)(MK_UIIMAGE)) img_image;
 - (UIImageView *(^)(NSArray <UIImage*> *)) img_images;
 - (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation;
+- (UIImageView *)img_end;
 
 @end

@@ -16,5 +16,7 @@
 - (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode { MK_RETURNNIL; }
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection { MK_RETURNNIL; }
 - (UILabel *(^)(MK_BOOL))lab_enabled { MK_RETURNNIL; }
+- (UILabel *(^)(MK_BOOL))lab_adjust { MK_RETURNNIL; }
+- (UILabel *)lab_end { MK_RETURNNIL; }
 
 @end

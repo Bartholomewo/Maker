@@ -13,5 +13,6 @@
 - (UIImageView *(^)(MK_UIIMAGE)) img_image { MK_RETURNNIL; }
 - (UIImageView *(^)(NSArray <UIImage*> *)) img_images { MK_RETURNNIL; }
 - (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation { MK_RETURNNIL; }
+- (UIImageView *)img_end { MK_RETURNNIL; }
 
 @end

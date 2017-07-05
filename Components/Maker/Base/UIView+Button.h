@@ -20,5 +20,6 @@
 - (UIButton *(^)(UIEdgeInsets, UIEdgeInsetsOption)) btn_insets;
 - (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action;
 - (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock;
+- (UIButton *) btn_end;
 
 @end

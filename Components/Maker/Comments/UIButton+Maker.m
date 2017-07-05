@@ -96,6 +96,9 @@
         self.buttonPressedBlock(sender);
     }
 }
+- (UIButton *)btn_end {
+    return self;
+}
 
 
 @end

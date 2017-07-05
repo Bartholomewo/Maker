@@ -19,5 +19,6 @@
 - (UIButton *(^)(MK_BOOL)) btn_enabled { MK_RETURNNIL; }
 - (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action { MK_RETURNNIL; }
 - (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock { MK_RETURNNIL; }
+- (UIButton *) btn_end { MK_RETURNNIL; }
 
 @end
