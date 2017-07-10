@@ -48,11 +48,6 @@
     .lab_textColor(@"#999999")
     .lab_font(13, 0.0, nil);
     
-    UIView.maker
-    .com_setup(cardView)
-    .com_backgroundColor(@"#F1F1F1")
-    .ext_drawRect(10, 10, 395, 1, vHorizon);
-    
     UIButton.maker
     .com_setup(cardView)
     .com_frame(10, 410, (screenWidth-60)/2-5, 30)

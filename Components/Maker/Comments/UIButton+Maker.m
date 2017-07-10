@@ -59,6 +59,12 @@
         return self;
     };
 }
+- (UIButton *(^)(MK_BOOL)) btn_selected {
+    return ^(MK_BOOL selected) {
+        self.selected = selected;
+        return self;
+    };
+}
 - (UIButton *(^)(MK_BOOL))btn_enabled {
     return ^(MK_BOOL enabled) {
         self.enabled = enabled;
