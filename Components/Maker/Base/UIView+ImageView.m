@@ -10,6 +10,7 @@
 
 @implementation UIView (ImageView)
 
+- (UIImageView *(^)(MK_STRING)) img_imageName { MK_RETURNNIL; }
 - (UIImageView *(^)(MK_UIIMAGE)) img_image { MK_RETURNNIL; }
 - (UIImageView *(^)(NSArray <UIImage*> *)) img_images { MK_RETURNNIL; }
 - (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation { MK_RETURNNIL; }

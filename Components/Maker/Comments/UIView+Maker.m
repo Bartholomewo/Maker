@@ -88,32 +88,3 @@
 
 @end
 
-@implementation UIView (Extention)
-
-- (UIView *(^)(MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_COLOR, LineViewDirection)) ext_drawRect {
-    return ^(MK_FLOAT padding1, MK_FLOAT padding2, MK_FLOAT distance, MK_FLOAT weight, MK_FLOAT llong, MK_COLOR color, LineViewDirection direction) {
-        //CGRect frame = self.superview.frame;
-        if (direction == vHorizon) {
-            self.frame = CGRectMake(padding1,
-                                    distance,
-                                    llong,
-                                    weight);
-        } else {
-            self.frame = CGRectMake(distance,
-                                    padding1,
-                                    weight,
-                                    llong);
-        }
-        
-        if ([color isKindOfClass:[UIColor class]]) {
-            self.backgroundColor = (UIColor *)color;
-        } else {
-            self.backgroundColor = [MakerUntil colorWithHexString:color];
-        }
-
-        return self;
-    };
-
-}
-
-@end

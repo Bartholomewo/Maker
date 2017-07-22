@@ -125,6 +125,9 @@ typedef NS_ENUM(NSUInteger, LineViewDirection) {
 static char *buttonPressedKey = "buttonPressedKey";
 typedef void(^ButtonPressedBlock)(UIButton *button);
 
+// ImageView图片Key
+static char *imageNameKey = "imageNameKey";
+
 @interface MakerUntil : NSObject
 // 16进制颜色返回UIColor
 + (UIColor *) colorWithHexString: (NSString *)color;
