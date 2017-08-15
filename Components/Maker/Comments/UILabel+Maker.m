@@ -21,7 +21,7 @@
         if ([color isKindOfClass:[UIColor class]]) {
             self.textColor = (UIColor *)color;
         } else {
-            self.textColor = [MakerUntil colorWithHexString:color];
+            self.textColor = [MakerUntil mk_colorWithHexString:color];
         }
         return self;
     };
@@ -35,15 +35,15 @@
         return self;
     };
 }
-- (UILabel *(^)(TextAlignmentOption)) lab_textAlignment {
-    return ^(TextAlignmentOption align) {
-        self.textAlignment = [MakerUntil textAlignment:align];
+- (UILabel *(^)(MKTextAlignmentOption)) lab_textAlignment {
+    return ^(MKTextAlignmentOption align) {
+        self.textAlignment = [MakerUntil mk_textAlignment:align];
         return self;
     };
 }
-- (UILabel *(^)(LineBreakModeOption)) lab_lineBreakMode {
-    return ^(LineBreakModeOption mode) {
-        self.lineBreakMode = [MakerUntil lineBreakMode:mode];
+- (UILabel *(^)(MKLineBreakModeOption)) lab_lineBreakMode {
+    return ^(MKLineBreakModeOption mode) {
+        self.lineBreakMode = [MakerUntil mk_lineBreakMode:mode];
         return self;
     };
 }

@@ -27,7 +27,7 @@
         if ([color isKindOfClass:[UIColor class]]) {
             self.textColor = (UIColor *)color;
         } else {
-            self.textColor = [MakerUntil colorWithHexString:color];
+            self.textColor = [MakerUntil mk_colorWithHexString:color];
         }
         return self;
     };
@@ -41,9 +41,9 @@
         return self;
     };
 }
-- (UITextField *(^)(TextAlignmentOption)) tf_textAlinment {
-    return ^(TextAlignmentOption align) {
-        self.textAlignment = [MakerUntil textAlignment:align];
+- (UITextField *(^)(MKTextAlignmentOption)) tf_textAlinment {
+    return ^(MKTextAlignmentOption align) {
+        self.textAlignment = [MakerUntil mk_textAlignment:align];
         return self;
     };
 }
@@ -53,9 +53,9 @@
         return self;
     };
 }
-- (UITextField *(^)(TextBorderStyleOption)) tf_style {
-    return ^(TextBorderStyleOption option) {
-        self.borderStyle = [MakerUntil textBorderStyle:option];
+- (UITextField *(^)(MKTextBorderStyleOption)) tf_style {
+    return ^(MKTextBorderStyleOption option) {
+        self.borderStyle = [MakerUntil mk_textBorderStyle:option];
         return self;
     };
 
@@ -66,26 +66,26 @@
         return self;
     };
 }
-- (UITextField *(^)(TextFieldViewModeOption)) tf_clearMode {
-    return ^(TextFieldViewModeOption option) {
-        self.clearButtonMode = [MakerUntil textFieldViewMode:option];
+- (UITextField *(^)(MKTextFieldViewModeOption)) tf_clearMode {
+    return ^(MKTextFieldViewModeOption option) {
+        self.clearButtonMode = [MakerUntil mk_textFieldViewMode:option];
         return self;
     };
 }
-- (UITextField *(^)(MK_UIVIEW, TextFieldViewModeOption)) tf_leftView {
-    return ^(MK_UIVIEW view, TextFieldViewModeOption option) {
+- (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView {
+    return ^(MK_UIVIEW view, MKTextFieldViewModeOption option) {
         if (view && option) {
             self.leftView = view;
-            self.leftViewMode = [MakerUntil textFieldViewMode:option];
+            self.leftViewMode = [MakerUntil mk_textFieldViewMode:option];
         }
         return self;
     };
 }
-- (UITextField *(^)(MK_UIVIEW, TextFieldViewModeOption)) tf_rightView {
-    return ^(MK_UIVIEW view, TextFieldViewModeOption option) {
+- (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView {
+    return ^(MK_UIVIEW view, MKTextFieldViewModeOption option) {
         if (view && option) {
             self.rightView = view;
-            self.rightViewMode = [MakerUntil textFieldViewMode:option];
+            self.rightViewMode = [MakerUntil mk_textFieldViewMode:option];
         }
         return self;
     };

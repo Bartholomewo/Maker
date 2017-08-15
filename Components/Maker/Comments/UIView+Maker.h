@@ -17,10 +17,10 @@
 - (UIView *(^)(MK_COLOR)) com_backgroundColor;
 - (UIView *(^)(MK_FLOAT)) com_alpha;
 - (UIView *(^)(MK_BOOL)) com_hidden;
-- (UIView *(^)(MK_FLOAT, MK_BOOL)) com_cornerRadius;
+- (UIView *(^)(MK_FLOAT)) com_cornerRadius;
 - (UIView *(^)(MK_FLOAT, MK_COLOR)) com_border;
 - (UIView *(^)(MK_INTEGER)) com_tag;
-- (UIView *(^)(ViewContentModeOption)) com_contentMode;
+- (UIView *(^)(MKViewContentModeOption)) com_contentMode;
 - (UIView *(^)(MK_BOOL)) com_userInterface;
 - (UIView *(^)(MK_UIVIEW)) com_setup;
 

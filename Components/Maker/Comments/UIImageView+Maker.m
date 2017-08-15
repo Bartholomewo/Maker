@@ -11,17 +11,17 @@
 
 @implementation UIImageView (Maker)
 
-- (void)setImageName:(NSString *)imageName {
-    objc_setAssociatedObject(self, imageNameKey, imageName, OBJC_ASSOCIATION_COPY);
+- (void)setMk_imageName:(NSString *)mk_imageName {
+    objc_setAssociatedObject(self, mk_imageNameKey, mk_imageName, OBJC_ASSOCIATION_COPY);
 }
-- (NSString *) imageName {
-    return objc_getAssociatedObject(self, imageNameKey);
+- (NSString *) mk_imageName {
+    return objc_getAssociatedObject(self, mk_imageNameKey);
 }
 
 - (UIImageView *(^)(MK_STRING)) img_imageName {
     return ^(MK_STRING imageName) {
         self.image = [UIImage imageNamed:imageName];
-        self.imageName = imageName;
+        self.mk_imageName = imageName;
         return self;
     };
 }

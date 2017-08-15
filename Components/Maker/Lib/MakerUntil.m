@@ -10,7 +10,7 @@
 
 @implementation MakerUntil
 
-+ (UIColor *) colorWithHexString: (NSString *)color {
++ (UIColor *) mk_colorWithHexString: (MK_STRING)color {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     if ([cString length] < 6) {
@@ -37,25 +37,25 @@
     
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
-+ (NSLineBreakMode) lineBreakMode:(LineBreakModeOption)option {
++ (NSLineBreakMode) mk_lineBreakMode:(MKLineBreakModeOption)option {
     return (NSLineBreakMode)option;
 }
-+ (NSTextAlignment) textAlignment:(TextAlignmentOption)option {
++ (NSTextAlignment) mk_textAlignment:(MKTextAlignmentOption)option {
     return (NSTextAlignment)option;
 }
-+ (UIViewContentMode) viewContentMode:(ViewContentModeOption)option {
++ (UIViewContentMode) mk_viewContentMode:(MKViewContentModeOption)option {
     return (UIViewContentMode)option;
 }
-+ (UIControlState) controlState:(ControlStateOption)option {
++ (UIControlState) mk_controlState:(MKControlStateOption)option {
     return (UIControlState)option;
 }
-+ (UIControlEvents) controlEvents:(ControlEventsOption)option {
++ (UIControlEvents) mk_controlEvents:(MKControlEventsOption)option {
     return (UIControlEvents)option;
 }
-+ (UITextBorderStyle) textBorderStyle:(TextBorderStyleOption)option {
++ (UITextBorderStyle) mk_textBorderStyle:(MKTextBorderStyleOption)option {
     return (UITextBorderStyle)option;
 }
-+ (UITextFieldViewMode) textFieldViewMode:(TextFieldViewModeOption)option {
++ (UITextFieldViewMode) mk_textFieldViewMode:(MKTextFieldViewModeOption)option {
     return (UITextFieldViewMode)option;
 }
 

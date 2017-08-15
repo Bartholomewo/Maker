@@ -10,6 +10,6 @@
 #import "MakerUntil.h"
 
 @interface UIImageView (Maker)
-@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSString *mk_imageName;
 
 @end

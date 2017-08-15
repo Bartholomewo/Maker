@@ -26,7 +26,7 @@
         if ([color isKindOfClass:[UIColor class]]) {
             self.backgroundColor = (UIColor *)color;
         } else {
-            self.backgroundColor = [MakerUntil colorWithHexString:color];
+            self.backgroundColor = [MakerUntil mk_colorWithHexString:color];
         }
         return self;
     };
@@ -43,10 +43,10 @@
         return self;
     };
 }
-- (UIView *(^)(MK_FLOAT, MK_BOOL)) com_cornerRadius {
-    return ^(MK_FLOAT radius, MK_BOOL maskToBounds) {
+- (UIView *(^)(MK_FLOAT)) com_cornerRadius {
+    return ^(MK_FLOAT radius) {
         self.layer.cornerRadius = radius;
-        self.layer.masksToBounds = maskToBounds;
+        self.layer.masksToBounds = YES;
         return self;
     };
 }
@@ -56,7 +56,7 @@
         if ([color isKindOfClass:[UIColor class]]) {
             self.layer.borderColor = ((UIColor *)color).CGColor;
         } else {
-            self.layer.borderColor = [MakerUntil colorWithHexString:color].CGColor;
+            self.layer.borderColor = [MakerUntil mk_colorWithHexString:color].CGColor;
         }
         return self;
     };
@@ -67,9 +67,9 @@
         return self;
     };
 }
-- (UIView *(^)(ViewContentModeOption)) com_contentMode {
-    return ^(ViewContentModeOption mode) {
-        self.contentMode = [MakerUntil viewContentMode:mode];
+- (UIView *(^)(MKViewContentModeOption)) com_contentMode {
+    return ^(MKViewContentModeOption mode) {
+        self.contentMode = [MakerUntil mk_viewContentMode:mode];
         return self;
     };
 }

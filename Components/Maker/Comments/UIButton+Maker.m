@@ -12,40 +12,40 @@
 @implementation UIButton (Maker)
 
 // set
-- (void)setButtonPressedBlock:(ButtonPressedBlock)buttonPressedBlock {
+- (void)setMk_buttonPressedBlock:(MKButtonPressedBlock)mk_buttonPressedBlock {
     objc_setAssociatedObject(self,
-                             buttonPressedKey,
-                             buttonPressedBlock,
+                             mk_buttonPressedKey,
+                             mk_buttonPressedBlock,
                              OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 // get
-- (ButtonPressedBlock)buttonPressedBlock {
-    return objc_getAssociatedObject(self, buttonPressedKey);
+- (MKButtonPressedBlock)mk_buttonPressedBlock {
+    return objc_getAssociatedObject(self, mk_buttonPressedKey);
 }
 
-- (UIButton *(^)(MK_STRING, ControlStateOption)) btn_title {
-    return ^(MK_STRING title, ControlStateOption state) {
-        [self setTitle:title forState:[MakerUntil controlState:state]];
+- (UIButton *(^)(MK_STRING, MKControlStateOption)) btn_title {
+    return ^(MK_STRING title, MKControlStateOption state) {
+        [self setTitle:title forState:[MakerUntil mk_controlState:state]];
         return self;
     };
 }
-- (UIButton *(^)(MK_COLOR, ControlStateOption)) btn_titleColor {
-    return ^(MK_COLOR color, ControlStateOption state) {
+- (UIButton *(^)(MK_COLOR, MKControlStateOption)) btn_titleColor {
+    return ^(MK_COLOR color, MKControlStateOption state) {
         if ([color isKindOfClass:[UIColor class]]) {
-            [self setTitleColor:(UIColor *)color forState:[MakerUntil controlState:state]];
+            [self setTitleColor:(UIColor *)color forState:[MakerUntil mk_controlState:state]];
         } else {
-            [self setTitleColor:[MakerUntil colorWithHexString:color] forState:[MakerUntil controlState:state]];
+            [self setTitleColor:[MakerUntil mk_colorWithHexString:color] forState:[MakerUntil mk_controlState:state]];
         }
         return self;
     };
 }
-- (UIButton *(^)(MK_UIIMAGE, ControlStateOption, MK_BOOL)) btn_image {
-    return ^(MK_UIIMAGE image, ControlStateOption state, MK_BOOL isBack) {
+- (UIButton *(^)(MK_UIIMAGE, MKControlStateOption, MK_BOOL)) btn_image {
+    return ^(MK_UIIMAGE image, MKControlStateOption state, MK_BOOL isBack) {
         if (isBack) {
-            [self setBackgroundImage:image forState:[MakerUntil controlState:state]];
+            [self setBackgroundImage:image forState:[MakerUntil mk_controlState:state]];
         } else {
-            [self setImage:image forState:[MakerUntil controlState:state]];
+            [self setImage:image forState:[MakerUntil mk_controlState:state]];
         }
         return self;
     };
@@ -71,9 +71,9 @@
         return self;
     };
 }
-- (UIButton *(^)(UIEdgeInsets, UIEdgeInsetsOption)) btn_insets {
-    return ^(UIEdgeInsets insets, UIEdgeInsetsOption option) {
-        if (option == Image) {
+- (UIButton *(^)(UIEdgeInsets, MKUIEdgeInsetsOption)) btn_insets {
+    return ^(UIEdgeInsets insets, MKUIEdgeInsetsOption option) {
+        if (option == mk_Image) {
             [self setImageEdgeInsets:insets];
         } else {
             [self setTitleEdgeInsets:insets];
@@ -81,25 +81,25 @@
         return self;
     };
 }
-- (UIButton *(^)(id, SEL, ControlEventsOption)) btn_action {
-    return ^(id target, SEL sel, ControlEventsOption events) {
-        [self addTarget:target action:sel forControlEvents:[MakerUntil controlEvents:events]];
+- (UIButton *(^)(id, SEL, MKControlEventsOption)) btn_action {
+    return ^(id target, SEL sel, MKControlEventsOption events) {
+        [self addTarget:target action:sel forControlEvents:[MakerUntil mk_controlEvents:events]];
         return self;
     };
 }
-- (UIButton *(^)(ControlEventsOption, ButtonPressedBlock))btn_actionBlock {
-    return ^(ControlEventsOption events, ButtonPressedBlock buttonPressedBlock) {
+- (UIButton *(^)(MKControlEventsOption, MKButtonPressedBlock))btn_actionBlock {
+    return ^(MKControlEventsOption events, MKButtonPressedBlock buttonPressedBlock) {
         if (!buttonPressedBlock) {
             return self;
         }
-        self.buttonPressedBlock = buttonPressedBlock;
-        [self addTarget:self action:@selector(buttonPressed:) forControlEvents:[MakerUntil controlEvents:events]];
+        self.mk_buttonPressedBlock = buttonPressedBlock;
+        [self addTarget:self action:@selector(buttonPressed:) forControlEvents:[MakerUntil mk_controlEvents:events]];
         return self;
     };
 }
 - (void) buttonPressed:(id)sender {
-    if (self.buttonPressedBlock) {
-        self.buttonPressedBlock(sender);
+    if (self.mk_buttonPressedBlock) {
+        self.mk_buttonPressedBlock(sender);
     }
 }
 - (UIButton *)btn_end {

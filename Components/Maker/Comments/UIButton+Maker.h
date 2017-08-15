@@ -10,6 +10,6 @@
 #import "MakerUntil.h"
 
 @interface UIButton (Maker)
-@property (nonatomic, copy) ButtonPressedBlock buttonPressedBlock;
+@property (nonatomic, copy) MKButtonPressedBlock mk_buttonPressedBlock;
 
 @end
