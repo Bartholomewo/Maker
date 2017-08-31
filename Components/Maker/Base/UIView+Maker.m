@@ -148,5 +148,30 @@
 - (UITextField *(^)(MKTextFieldViewModeOption)) tf_clearMode { MK_RETURNNIL; }
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView { MK_RETURNNIL; }
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView { MK_RETURNNIL; }
+- (UITextField *)tf_end { MK_RETURNNIL; }
+@end
+
+
+#pragma mark ================== UIView + MKUIScrollView ====================
+@implementation UIView (MKScrollView)
+- (UIScrollView *(^)(MK_CGPOINT)) scr_contentOffset { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_CGSize)) scr_contentSize { MK_RETURNNIL; }
+- (UIScrollView *(^)(UIEdgeInsets)) scr_contentInsets { MK_RETURNNIL; }
+- (UIScrollView *(^)(id)) scr_delegate { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_bounces { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_alwaysBounceVertical { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_alwaysBounceHorizontal { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_scrollEnabled { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_showsHorizontal { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_showsVertical { MK_RETURNNIL; }
+- (UIScrollView *(^)(UIEdgeInsets)) scr_indicatorInsets { MK_RETURNNIL; }
+- (UIScrollView *(^)(MKScrollViewIndicatorStyle)) scr_indicatorStyle { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_FLOAT)) scr_minScale { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_FLOAT)) scr_maxScale { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_FLOAT)) scr_zoomScale { MK_RETURNNIL; }
+- (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom { MK_RETURNNIL; }
+- (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode { MK_RETURNNIL; }
+- (UIScrollView *)scr_end { MK_RETURNNIL; }
+
 @end
 

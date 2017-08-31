@@ -58,5 +58,11 @@
 + (UITextFieldViewMode) mk_textFieldViewMode:(MKTextFieldViewModeOption)option {
     return (UITextFieldViewMode)option;
 }
++ (UIScrollViewIndicatorStyle) mk_scrollViewIndicatorStyle:(MKScrollViewIndicatorStyle)option {
+    return (UIScrollViewIndicatorStyle)option;
+}
++ (UIScrollViewKeyboardDismissMode) mk_scrollViewKeyboardDismissModel:(MKScrollViewKeyboardDismissMode)option {
+    return (UIScrollViewKeyboardDismissMode)option;
+}
 
 @end

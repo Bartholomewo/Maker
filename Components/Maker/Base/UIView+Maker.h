@@ -131,4 +131,47 @@
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView;
 /** 设置TextField的右view */
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView;
+/** TextField链式结束 */
+- (UITextField *)tf_end;
+@end
+
+
+#pragma mark ================== UIView + MKUIScrollView ====================
+@interface UIView (MKScrollView)
+/** 设置ScrollView的偏移量 */
+- (UIScrollView *(^)(MK_CGPOINT)) scr_contentOffset;
+/** 设置ScrollView的Size */
+- (UIScrollView *(^)(MK_CGSize)) scr_contentSize;
+/** 设置ScrollView的EdgeInsets*/
+- (UIScrollView *(^)(UIEdgeInsets)) scr_contentInsets;
+/** 设置ScrollView的代理*/
+- (UIScrollView *(^)(id)) scr_delegate;
+/** 设置ScrollView的bounces*/
+- (UIScrollView *(^)(MK_BOOL)) scr_bounces;
+/** 设置ScrollView的alwaysBounceVertical*/
+- (UIScrollView *(^)(MK_BOOL)) scr_alwaysBounceVertical;
+/** 设置ScrollView的alwaysBounceHorizontal*/
+- (UIScrollView *(^)(MK_BOOL)) scr_alwaysBounceHorizontal;
+/** 设置ScrollView的scrollEnabled*/
+- (UIScrollView *(^)(MK_BOOL)) scr_scrollEnabled;
+/** 设置ScrollView的showsHorizontalScrollIndicator*/
+- (UIScrollView *(^)(MK_BOOL)) scr_showsHorizontal;
+/** 设置ScrollView的showsVerticalScrollIndicator*/
+- (UIScrollView *(^)(MK_BOOL)) scr_showsVertical;
+/** 设置ScrollView的scrollIndicatorInsets*/
+- (UIScrollView *(^)(UIEdgeInsets)) scr_indicatorInsets;
+/** 设置ScrollView的bounces*/
+- (UIScrollView *(^)(MKScrollViewIndicatorStyle)) scr_indicatorStyle;
+/** 设置ScrollView的minimumZoomScale*/
+- (UIScrollView *(^)(MK_FLOAT)) scr_minScale;
+/** 设置ScrollView的maximumZoomScale*/
+- (UIScrollView *(^)(MK_FLOAT)) scr_maxScale;
+/** 设置ScrollView的zoomScale*/
+- (UIScrollView *(^)(MK_FLOAT)) scr_zoomScale;
+/** 设置ScrollView的bouncesZoom*/
+- (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom;
+/** 设置ScrollView的bounces*/
+- (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode;
+/** ScrollView链式结束 */
+- (UIScrollView *)scr_end;
 @end

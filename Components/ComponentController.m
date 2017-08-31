@@ -19,9 +19,16 @@
     self.title = @"XX家居";
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
+    UIScrollView *mainScrollView = UIScrollView.maker
+    .com_setup(self.view)
+    .com_frame(0, 0, screenWidth, screenHeight)
+    .scr_contentSize(CGSizeMake(screenWidth, screenHeight + 100))
+    .scr_end;
     
     UIView *cardView = UIView.maker
-    .com_setup(self.view)
+    .com_setup(mainScrollView)
     .com_frame(20, 20, screenWidth - 40, 450)
     .com_border(1.0, @"#F1F1F1")
     .com_cornerRadius(5.0);

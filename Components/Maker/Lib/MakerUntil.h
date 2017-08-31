@@ -19,6 +19,8 @@
 #define MK_CONTROLSTATE     UIControlState
 #define MK_INTEGER          NSInteger
 #define MK_TIMEINTERVAL     NSTimeInterval
+#define MK_CGPOINT          CGPoint
+#define MK_CGSize           CGSize
 
 #define MK_RETURNNIL        return nil
 
@@ -121,6 +123,20 @@ typedef NS_ENUM(NSUInteger, MKLineViewDirection) {
     mk_Vertical
 };
 
+// UIScrollViewIndicatorStyle
+typedef NS_ENUM(NSInteger, MKScrollViewIndicatorStyle) {
+    mk_Default,
+    mk_Black,
+    mk_White
+};
+
+// 键盘消失的模式UIScrollViewKeyboardDismissMode
+typedef NS_ENUM(NSInteger, MKScrollViewKeyboardDismissMode) {
+    mk_DisNone,
+    mk_DisOnDrag,      // dismisses the keyboard when a drag begins
+    mk_DisInteractive, // the keyboard follows the dragging touch off screen, and may be pulled upward again to cancel the dismiss
+} NS_ENUM_AVAILABLE_IOS(7_0);
+
 // Button点击事件
 static char *mk_buttonPressedKey = "mk_buttonPressedKey";
 typedef void(^MKButtonPressedBlock)(UIButton *button);
@@ -153,5 +169,10 @@ static char *mk_imageNameKey = "mk_imageNameKey";
 // UITextFieldViewMode
 + (UITextFieldViewMode) mk_textFieldViewMode:(MKTextFieldViewModeOption)option;
 
+// UIScrollViewIndicatorStyle
++ (UIScrollViewIndicatorStyle) mk_scrollViewIndicatorStyle:(MKScrollViewIndicatorStyle)option;
+
+// UIScrollViewIndicatorStyle
++ (UIScrollViewKeyboardDismissMode) mk_scrollViewKeyboardDismissModel:(MKScrollViewKeyboardDismissMode)option;
 
 @end

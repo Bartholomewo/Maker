@@ -14,5 +14,7 @@
 #import "UIButton+Maker.h"
 #import "UIImageView+Maker.h"
 #import "UITextField+Maker.h"
+#import "NSNumber+Maker.h"
+#import "UIScrollView+Maker.h"
 
 #endif /* Maker_h */

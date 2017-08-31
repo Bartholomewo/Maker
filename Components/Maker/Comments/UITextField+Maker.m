@@ -95,4 +95,7 @@
         return self;
     };
 }
+- (UITextField *) tf_end {
+    return self;
+}
 @end

@@ -7,6 +7,7 @@
 - UIButton
 - UITextField
 - UIImageView
+- UIScrollView
 - (Coding...)
 
 简单使用：
@@ -23,6 +24,7 @@ lab_ : UILabel的所有属性前缀
 btn_ : UIButton
 img_ : UIImageView
 tf_  : UITextField
+scr_ : UIScrollView
 其他的函数都一一对应该控件的属性
 
 在MakerUtil里我重写了系统的枚举，使用的时候注意一下，就可以完美掌握了。
@@ -36,6 +38,8 @@ tf_  : UITextField
 
 2. mk_imageName
 该属性可以获取到你设置的图片的名字。
+
+3. UIScrollView
 ```
 对比：
 ```
