@@ -1,5 +1,5 @@
 //
-//  NSNumber+UIDesign.h
+//  NSNumber+Maker.h
 //
 //  Created by ZhaoHeng on 16/8/31.
 //  Copyright © 2016年 forkingghost. All rights reserved.
@@ -15,7 +15,7 @@
 #define ppx3(number) @(number).px3
 #define fft3(number) @(number).ft3
 
-@interface NSNumber (UIDesign)
+@interface NSNumber (Maker)
 
 - (float) px; // 获取计算后获得的iOS设备上使用的像素大小
 - (float) ft; // 获取计算后获得的iOS设备上使用的字体大小

@@ -1,11 +1,11 @@
 //
-//  NSNumber+UIDesign.m
+//  NSNumber+Maker.m
 //
 //  Created by ZhaoHeng on 16/8/31.
 //  Copyright © 2016年 forkingghost. All rights reserved.
 //
 
-#import "NSNumber+UIDesign.h"
+#import "NSNumber+Maker.h"
 
 @implementation NSNumber (UIDesign)
 
