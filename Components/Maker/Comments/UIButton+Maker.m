@@ -50,7 +50,13 @@
         return self;
     };
 }
-- (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font {
+- (UIButton *(^)(MK_FLOAT)) btn_font1 {
+    return ^(MK_FLOAT size) {
+        self.titleLabel.font = [UIFont systemFontOfSize:size];
+        return self;
+    };
+}
+- (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font2 {
     return ^(MK_FLOAT size, MK_FLOAT weight, MK_STRING family) {
         self.titleLabel.font = [UIFont systemFontOfSize:size weight:weight];
         if (family) {

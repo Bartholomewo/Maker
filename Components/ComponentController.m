@@ -56,7 +56,7 @@
     .com_cornerRadius(5.0)
     .btn_title(@"加入购物车", mk_Normal)
     .btn_titleColor([UIColor lightGrayColor], mk_Normal)
-    .btn_font(13, 0.0, nil)
+    .btn_font1(13)
     .btn_actionBlock(mk_TouchUpInside, ^(id sender) {
         NSLog(@"加入购物车");
     });
@@ -68,7 +68,7 @@
     .com_cornerRadius(5.0)
     .btn_title(@"立即下单", mk_Normal)
     .btn_titleColor(@"#FFFFFF", mk_Normal)
-    .btn_font(13, 0.0, nil)
+    .btn_font1(13)
     .btn_actionBlock(mk_TouchUpInside, ^(id sender) {
         NSLog(@"立即下单");
     });

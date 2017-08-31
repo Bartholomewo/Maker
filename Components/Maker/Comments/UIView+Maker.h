@@ -22,6 +22,9 @@
 - (UIView *(^)(MK_INTEGER)) com_tag;
 - (UIView *(^)(MKViewContentModeOption)) com_contentMode;
 - (UIView *(^)(MK_BOOL)) com_userInterface;
+/** 添加到某个View */
 - (UIView *(^)(MK_UIVIEW)) com_setup;
+/** 切割 */
+- (UIView *(^)(MK_BOOL)) com_clipsToBounds;
 
 @end

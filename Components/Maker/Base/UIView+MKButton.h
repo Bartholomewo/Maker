@@ -17,8 +17,11 @@
 - (UIButton *(^)(MK_COLOR, MKControlStateOption)) btn_titleColor;
 /** 设置图片 图片 状态:mk_Normal 是否是背景图片 */
 - (UIButton *(^)(MK_UIIMAGE, MKControlStateOption, MK_BOOL)) btn_image;
+/** 设置标题文字style size */
+- (UIButton *(^)(MK_FLOAT)) btn_font1;
 /** 设置标题文字style size weight family */
-- (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font;
+- (UIButton *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) btn_font2;
+/** 设置选中状态 YES/NO */
 - (UIButton *(^)(MK_BOOL)) btn_selected;
 - (UIButton *(^)(MK_BOOL)) btn_enabled;
 /** 设置标题文字Edge UIEdgeInsets， mk_Image/mk_Title */
