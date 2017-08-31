@@ -26,7 +26,13 @@
         return self;
     };
 }
-- (UILabel *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) lab_font {
+- (UILabel *(^)(MK_FLOAT)) lab_font1 {
+    return ^(MK_FLOAT size) {
+        self.font = [UIFont systemFontOfSize:size];
+        return self;
+    };
+}
+- (UILabel *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) lab_font2 {
     return ^(MK_FLOAT size, MK_FLOAT weight, MK_STRING family) {
         self.font = [UIFont systemFontOfSize:size weight:weight];
         if (family) {

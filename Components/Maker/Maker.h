@@ -15,9 +15,4 @@
 #import "UIImageView+Maker.h"
 #import "UITextField+Maker.h"
 
-#import "UIView+MKLabel.h"
-#import "UIView+MKButton.h"
-#import "UIView+MKImageView.h"
-#import "UIView+MKTextField.h"
-
 #endif /* Maker_h */

@@ -9,7 +9,6 @@
 #import "UITextField+Maker.h"
 
 @implementation UITextField (Maker)
-
 - (UITextField *(^)(MK_STRING)) tf_text {
     return ^(MK_STRING text) {
         self.text = text;
@@ -32,7 +31,13 @@
         return self;
     };
 }
-- (UITextField *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) tf_font {
+- (UITextField *(^)(MK_FLOAT)) tf_font1 {
+    return ^(MK_FLOAT size) {
+        self.font = [UIFont systemFontOfSize:size];
+        return self;
+    };
+}
+- (UITextField *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) tf_font2 {
     return ^(MK_FLOAT size, MK_FLOAT weight, MK_STRING family) {
         self.font = [UIFont systemFontOfSize:size weight:weight];
         if (family) {
@@ -90,5 +95,4 @@
         return self;
     };
 }
-
 @end

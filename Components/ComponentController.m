@@ -38,7 +38,7 @@
     .lab_text(@"RONZEN纯棉 无任何添加剂 床上春夏被单 床上用品 全面贡缎 欧式风格")
     .lab_lineBreakMode(mk_Char)
     .lab_numberOfSection(2)
-    .lab_font(15, 0.0, nil)
+    .lab_font2(15, 0.0, nil)
     .lab_textColor(@"#666666");
     
     UILabel.maker
@@ -46,7 +46,7 @@
     .com_frame(10, 370, screenWidth-60, 15)
     .lab_text(@"发表于 2017-06-17")
     .lab_textColor(@"#999999")
-    .lab_font(13, 0.0, nil);
+    .lab_font2(13, 0.0, nil);
     
     UIButton.maker
     .com_setup(cardView)
