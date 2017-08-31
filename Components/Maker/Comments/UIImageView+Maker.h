@@ -10,6 +10,7 @@
 #import "MakerUntil.h"
 
 @interface UIImageView (Maker)
+/** 获取设置图片的名字 */
 @property (nonatomic, copy) NSString *mk_imageName;
 
 @end

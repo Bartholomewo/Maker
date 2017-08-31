@@ -85,6 +85,12 @@
         return self;
     };
 }
+- (UIView *(^)(MK_BOOL)) com_clipsToBounds {
+    return ^(MK_BOOL flag) {
+        self.clipsToBounds = flag;
+        return self;
+    };
+}
 
 @end
 
