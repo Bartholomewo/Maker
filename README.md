@@ -91,3 +91,5 @@ UILabel *label = UILabel.maker
 .lab_font1(17)
 .lab_textAlinment(lCenter);
 ```
+
+> 如果感觉好用并且希望提供更多的功能，请联系kuma15@163.com，或者fork之后提供更好的功能改进。
