@@ -144,6 +144,12 @@ typedef void(^MKButtonPressedBlock)(UIButton *button);
 // ImageView图片Key
 static char *mk_imageNameKey = "mk_imageNameKey";
 
+// UITextField事件
+static char *mk_shouldReturnKey = "mk_shouldReturnKey";
+typedef void(^MKShouldReturnBlock)();
+static char *mk_textChangeKey = "mk_textChangeKey";
+typedef void(^MKTextChangeBlock)(NSString *text);
+
 @interface MakerUntil : NSObject
 // 16进制颜色返回UIColor
 + (UIColor *) mk_colorWithHexString: (MK_STRING)color;

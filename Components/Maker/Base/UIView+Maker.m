@@ -105,7 +105,6 @@
 - (UIButton *(^)(MK_BOOL)) btn_enabled { MK_RETURNNIL; }
 - (UIButton *(^)(id, SEL, MKControlEventsOption)) btn_action { MK_RETURNNIL; }
 - (UIButton *(^)(MKControlEventsOption, MKButtonPressedBlock))btn_actionBlock { MK_RETURNNIL; }
-- (UIButton *) btn_end { MK_RETURNNIL; }
 @end
 
 
@@ -115,7 +114,6 @@
 - (UIImageView *(^)(MK_UIIMAGE)) img_image { MK_RETURNNIL; }
 - (UIImageView *(^)(NSArray <UIImage*> *)) img_images { MK_RETURNNIL; }
 - (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation { MK_RETURNNIL; }
-- (UIImageView *)img_end { MK_RETURNNIL; }
 @end
 
 
@@ -130,7 +128,6 @@
 - (UILabel *(^)(MK_INTEGER)) lab_numberOfSection { MK_RETURNNIL; }
 - (UILabel *(^)(MK_BOOL))lab_enabled { MK_RETURNNIL; }
 - (UILabel *(^)(MK_BOOL))lab_adjust { MK_RETURNNIL; }
-- (UILabel *)lab_end { MK_RETURNNIL; }
 @end
 
 
@@ -142,13 +139,17 @@
 - (UITextField *(^)(MK_FLOAT)) tf_font1 { MK_RETURNNIL; }
 - (UITextField *(^)(MK_FLOAT, MK_FLOAT, MK_STRING)) tf_font2 { MK_RETURNNIL; }
 - (UITextField *(^)(MKTextAlignmentOption)) tf_textAlinment { MK_RETURNNIL; }
-- (UITextField *(^)(id)) tf_delegate { MK_RETURNNIL; }
+- (UITextField *(^)()) tf_delegate { MK_RETURNNIL; }
 - (UITextField *(^)(MKTextBorderStyleOption)) tf_style { MK_RETURNNIL; }
 - (UITextField *(^)(MK_STRING)) tf_placeholder { MK_RETURNNIL; }
 - (UITextField *(^)(MKTextFieldViewModeOption)) tf_clearMode { MK_RETURNNIL; }
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView { MK_RETURNNIL; }
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView { MK_RETURNNIL; }
-- (UITextField *)tf_end { MK_RETURNNIL; }
+- (UITextField *(^)(MK_INTEGER)) tf_maxLength { MK_RETURNNIL; }
+- (UITextField *(^)()) tf_notification { MK_RETURNNIL; }
+- (UITextField *(^)()) tf_removeNotification { MK_RETURNNIL; }
+- (UITextField *(^)(MKShouldReturnBlock)) tf_optionBlock { MK_RETURNNIL; }
+- (UITextField *(^)(MKTextChangeBlock)) tf_changeBlock { MK_RETURNNIL; }
 @end
 
 
@@ -171,7 +172,6 @@
 - (UIScrollView *(^)(MK_FLOAT)) scr_zoomScale { MK_RETURNNIL; }
 - (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom { MK_RETURNNIL; }
 - (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode { MK_RETURNNIL; }
-- (UIScrollView *)scr_end { MK_RETURNNIL; }
 
 @end
 

@@ -71,9 +71,5 @@
         return self;
     };
 }
-- (UILabel *)lab_end {
-    return self;
-}
-
 
 @end

@@ -44,8 +44,5 @@
         return self;
     };
 }
-- (UIImageView *)img_end {
-    return self;
-}
 
 @end

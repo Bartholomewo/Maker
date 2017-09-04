@@ -60,8 +60,6 @@
 - (UIButton *(^)(id, SEL, MKControlEventsOption)) btn_action;
 /** 点击Button事件 mk_TouchUpInside..., block */
 - (UIButton *(^)(MKControlEventsOption, MKButtonPressedBlock))btn_actionBlock;
-/** Button链式结束 */
-- (UIButton *) btn_end;
 @end
 
 
@@ -75,8 +73,6 @@
 - (UIImageView *(^)(NSArray <UIImage*> *)) img_images;
 /** 设置ImageView的动画的时间和次数 */
 - (UIImageView *(^)(MK_TIMEINTERVAL, MK_INTEGER)) img_animation;
-/** ImageView链式结束 */
-- (UIImageView *)img_end;
 @end
 
 
@@ -100,8 +96,6 @@
 - (UILabel *(^)(MK_BOOL)) lab_enabled;
 /** 设置Label如果超过宽自动缩放字体 */
 - (UILabel *(^)(MK_BOOL))lab_adjust;
-/** Label链式结束*/
-- (UILabel *) lab_end;
 @end
 
 
@@ -120,7 +114,7 @@
 /** 设置TextField的文字居左、中、右 */
 - (UITextField *(^)(MKTextAlignmentOption)) tf_textAlinment;
 /** 设置TextField的的代理 */
-- (UITextField *(^)(id)) tf_delegate;
+- (UITextField *(^)()) tf_delegate;
 /** 设置TextField的风格 */
 - (UITextField *(^)(MKTextBorderStyleOption)) tf_style;
 /** 设置TextField的提示语 */
@@ -131,8 +125,18 @@
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView;
 /** 设置TextField的右view */
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView;
-/** TextField链式结束 */
-- (UITextField *)tf_end;
+
+/// 附加函数
+/** 设置TextField的字数限制 如果要使用字符限制需要设置tf_notification tf_delegate*/
+- (UITextField *(^)(MK_INTEGER)) tf_maxLength;
+/** 设置TextField的通知 */
+- (UITextField *(^)()) tf_notification;
+/** 去除TextField的通知 */
+- (UITextField *(^)()) tf_removeNotification;
+/** 点击return search的功能按钮时候的回调 */
+- (UITextField *(^)(MKShouldReturnBlock)) tf_optionBlock;
+/** 设置TextField文字变化的block */
+- (UITextField *(^)(MKTextChangeBlock)) tf_changeBlock;
 @end
 
 
@@ -172,6 +176,4 @@
 - (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom;
 /** 设置ScrollView的bounces*/
 - (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode;
-/** ScrollView链式结束 */
-- (UIScrollView *)scr_end;
 @end

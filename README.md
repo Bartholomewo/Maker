@@ -39,7 +39,22 @@ scr_ : UIScrollView
 2. mk_imageName
 该属性可以获取到你设置的图片的名字。
 
-3. UIScrollView
+3. UIScrollView (2017-09-01)
+
+4. 新增TextField限制字符数 (2017-09-04)
+UITextField.maker
+.com_setup(textFieldView)
+.com_frame(10, 10, textFieldView.frame.size.width - 20, 30)
+.tf_style(mk_RoundedRect)
+.tf_notification()
+.tf_delegate()
+.tf_maxLength(10)
+.tf_optionBlock(^(){
+    NSLog(@"return");
+})
+.tf_changeBlock(^(NSString *text) {
+    NSLog(@"%@", text);
+});
 ```
 对比：
 ```
@@ -55,7 +70,7 @@ label.font = [UIFont systemFontOfSize:ppx(17) weight:0];
 label.textAlignment = NSTextAlignmentCenter;
 [self.view addSubview:label];
 
-UILabel *label = UILabel.maker
+UILabel.maker
 .com_setup(self.view)
 .com_frame(ppx(20), ppx(20), ppx(20) ,ppx(20))
 .com_cornerRadius(10, YES)

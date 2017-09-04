@@ -111,7 +111,4 @@
         return self;
     };
 }
-- (UIScrollView *) scr_end {
-    return self;
-}
 @end

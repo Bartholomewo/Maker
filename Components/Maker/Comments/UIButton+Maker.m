@@ -108,9 +108,6 @@
         self.mk_buttonPressedBlock(sender);
     }
 }
-- (UIButton *)btn_end {
-    return self;
-}
 
 
 @end

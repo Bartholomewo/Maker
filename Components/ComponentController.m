@@ -24,8 +24,7 @@
     UIScrollView *mainScrollView = UIScrollView.maker
     .com_setup(self.view)
     .com_frame(0, 0, screenWidth, screenHeight)
-    .scr_contentSize(CGSizeMake(screenWidth, screenHeight + 100))
-    .scr_end;
+    .scr_contentSize(CGSizeMake(screenWidth, screenHeight + 100));
     
     UIView *cardView = UIView.maker
     .com_setup(mainScrollView)
@@ -78,6 +77,26 @@
     .btn_font1(13)
     .btn_actionBlock(mk_TouchUpInside, ^(id sender) {
         NSLog(@"立即下单");
+    });
+    
+    
+    UIView *textFieldView = UIView.maker
+    .com_setup(mainScrollView)
+    .com_frame(20, cardView.frame.origin.y + cardView.frame.size.height + 20, screenWidth - 40, 50)
+    .com_backgroundColor(@"#F1F1F1");
+    
+    UITextField.maker
+    .com_setup(textFieldView)
+    .com_frame(10, 10, textFieldView.frame.size.width - 20, 30)
+    .tf_style(mk_RoundedRect)
+    .tf_notification()
+    .tf_delegate()
+    .tf_maxLength(10)
+    .tf_optionBlock(^(){
+        NSLog(@"return");
+    })
+    .tf_changeBlock(^(NSString *text) {
+        NSLog(@"%@", text);
     });
     
 }

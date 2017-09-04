@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MakerUntil.h"
 
-@interface UITextField (Maker)
+static char *mk_private_maxLengthKey = "mk_private_maxLengthKey";
+
+@interface UITextField (Maker) <UITextFieldDelegate>
+@property (nonatomic, assign, readonly) MK_INTEGER private_maxLength;
 
 @end
+
