@@ -10,7 +10,7 @@
 ## Installation
 
 ```ruby
-pod 'Maker'
+pod 'Maker', '~> 0.1.3'
 ```
 
 ## Author
