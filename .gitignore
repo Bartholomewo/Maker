@@ -1,10 +1,22 @@
-<<<<<<< HEAD
-# OS X
-.DS_Store
-
-# Xcode
-build/
-=======
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @Bartholomewo
+ Sign out
+ Watch 0
+  Unstar 4
+  Fork 0 Bartholomewo/Maker
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Settings Insights
+Branch: master Find file Copy pathMaker/.gitignore
+a0e13ce  on 16 Jun
+@hellolad hellolad Initial commit
+1 contributor
+RawBlameHistory
+64 lines (52 sloc)  1.37 KB
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -14,7 +26,6 @@ build/
 DerivedData/
 
 ## Various settings
->>>>>>> a5af4577fc54fd50e176280f285caf347f936fa6
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,27 +35,6 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-<<<<<<< HEAD
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-
-# Bundler
-.bundle
-
-Carthage
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
-=======
 
 ## Other
 *.moved-aside
@@ -90,4 +80,15 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
->>>>>>> a5af4577fc54fd50e176280f285caf347f936fa6
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
