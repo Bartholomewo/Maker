@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		0ECC5C90888254D890093210512BF00E /* Pods-Maker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE35DED089E9B53FC704DC05D8C0F75 /* Pods-Maker_Tests-dummy.m */; };
-		173A028EF4150CC87768403DB959ECC3 /* Maker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5C5295B687E19C98EA30DD7000491B /* Maker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BF6F92B69B7C70AF1F0C0EE27CCCC77 /* UITextField+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40275CF7986D39D450D04D743BACFD /* UITextField+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		245E2E3F97BA88D118850A6D5137D7A2 /* UIImageView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC420435B01391B5780E376DCE82C23 /* UIImageView+Maker.m */; };
+		34573F19814694BD5B308B17FCF06EB1 /* Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C9FE95538859355431F8C422C76DDC9 /* Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FBC30B0059464B5809B30A04F506C0E /* UIImageView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F6906544F2968926B655D3505177C3 /* UIImageView+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47C66C2B9EB8F14E8753EBB8B5E4F5CB /* Pods-Maker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E90903C0095DC4D4B9E5BAAC9AFD5 /* Pods-Maker_Example-dummy.m */; };
-		56342A953D04E9583BA4CE1B6BE38BEB /* Maker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C152D974B30998F5A96C877D84C8E /* Maker-dummy.m */; };
-		59F06D5498AF2F86A1A04AAD77B4EC8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4BF6B00AD406D500C3D0F42CD54C216A /* UILabel+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E4B77D34CF2929134AF3223759DED6 /* UILabel+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E4D77ED7C57B667E50274A181E1B55B /* UIButton+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9978B0D3A8A2AF42B80A92E6F64F00 /* UIButton+Maker.m */; };
+		559CFBD168A501CEDC98E49645EAF04F /* Maker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B33C152D974B30998F5A96C877D84C8E /* Maker-dummy.m */; };
+		6090DACEE9AC1049B41BCEB87533806D /* UIScrollView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D48B96A68BFA457FAE73BB0601AD9CE /* UIScrollView+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		611A452FBAFE0B5ED076CA8EACBAB675 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6233892C63291B93EDC0A259CEFF3697 /* MakerUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = DACE7B3DFB4A680736F5B1E3BDF92A5B /* MakerUntil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		673FC1F43721E55E66E3D2FE30BB8F86 /* UILabel+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = E1160C9DD451BB168648B9D4FC3221C9 /* UILabel+Maker.m */; };
+		6F1E489479534E45EB6F6DA0C8DFC83C /* NSNumber+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A97FF77666B8160B0CD126F9BA1B44 /* NSNumber+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7638587CF32BE6F0513C1E9DE5672109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		83CA483CDA6A1827D852642047BBE1A6 /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B695EA97385064B9F196CB0E78C1B4 /* UIView+Maker.m */; };
+		902D762BCFECE8F2F1FE23520BE15C57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		94A01F6778A334B041F4ACB768A8F503 /* UIView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCF04ED9F520A3067103F0A2B8AA908 /* UIView+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A0230640F3A372C0B89530B36E193B /* Maker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5C5295B687E19C98EA30DD7000491B /* Maker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5CA992307D7663FBE0098EA32A8A42D /* UIScrollView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = C0479486643A718CFBA9C4AA57A239B3 /* UIScrollView+Maker.m */; };
+		ABCF66ADA923855EAE6B6CDF496CA0D6 /* UIButton+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE5C166CA1FB73CBC2E7AD79EF580D9 /* UIButton+Maker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3546976DC763D0BE85C9A15971C0C8D /* UITextField+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE54ED42EEA9310AFD9D7E2D31A19A /* UITextField+Maker.m */; };
+		CC0A24252735255A54F2B834BBFFCF71 /* NSNumber+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = C856E34EA6CA20EF1CE805571C12EBF5 /* NSNumber+Maker.m */; };
 		D9EA10FFCC0360643305279E8EBF7077 /* Pods-Maker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A640E416B573227D12803652ADD68D7 /* Pods-Maker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8E945A5A4DB9539371A21230574F457 /* Pods-Maker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 788863C55B78076755E646535AE654DE /* Pods-Maker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F525F3441F5D470E000B6A6F /* UIView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3311F5D470E000B6A6F /* UIView+Maker.h */; };
-		F525F3451F5D470E000B6A6F /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3321F5D470E000B6A6F /* UIView+Maker.m */; };
-		F525F3461F5D470E000B6A6F /* UIButton+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3341F5D470E000B6A6F /* UIButton+Maker.h */; };
-		F525F3471F5D470E000B6A6F /* UIButton+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3351F5D470E000B6A6F /* UIButton+Maker.m */; };
-		F525F3481F5D470E000B6A6F /* UIImageView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */; };
-		F525F3491F5D470E000B6A6F /* UIImageView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */; };
-		F525F34A1F5D470E000B6A6F /* UILabel+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3381F5D470E000B6A6F /* UILabel+Maker.h */; };
-		F525F34B1F5D470E000B6A6F /* UILabel+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3391F5D470E000B6A6F /* UILabel+Maker.m */; };
-		F525F34C1F5D470E000B6A6F /* UIScrollView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */; };
-		F525F34D1F5D470E000B6A6F /* UIScrollView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */; };
-		F525F34E1F5D470E000B6A6F /* UITextField+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */; };
-		F525F34F1F5D470E000B6A6F /* UITextField+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */; };
-		F525F3501F5D470E000B6A6F /* MakerUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33F1F5D470E000B6A6F /* MakerUntil.h */; };
-		F525F3511F5D470E000B6A6F /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3401F5D470E000B6A6F /* MakerUntil.m */; };
-		F525F3521F5D470E000B6A6F /* NSNumber+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */; };
-		F525F3531F5D470E000B6A6F /* NSNumber+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */; };
-		F525F3541F5D470E000B6A6F /* Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3431F5D470E000B6A6F /* Maker.h */; };
+		F0AA0625EEA13DA359E5CD94A1C66F36 /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E69FA54DDD22B4D9128E93742EF7978 /* MakerUntil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,58 +40,58 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB14A048B57035D3138BEA8A23BE3923;
+			remoteGlobalIDString = F275F75ABACBDB7A5510336BE29C0E0E;
 			remoteInfo = Maker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02745E3E8D22DB4731A6394B85778A8C /* Pods_Maker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02745E3E8D22DB4731A6394B85778A8C /* Pods_Maker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Maker_Tests.framework; path = "Pods-Maker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9978B0D3A8A2AF42B80A92E6F64F00 /* UIButton+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Maker.m"; sourceTree = "<group>"; };
+		1BE5C166CA1FB73CBC2E7AD79EF580D9 /* UIButton+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+Maker.h"; sourceTree = "<group>"; };
 		2E2876E83313F7F06198477135A0BC2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCB742BF7A51B8527FE7ADC414BF627 /* Pods-Maker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Example-resources.sh"; sourceTree = "<group>"; };
 		38BA0C5B28ACB61608A97D95A6EB6A58 /* Pods-Maker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3F5C5295B687E19C98EA30DD7000491B /* Maker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Maker-umbrella.h"; sourceTree = "<group>"; };
+		40A97FF77666B8160B0CD126F9BA1B44 /* NSNumber+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Maker.h"; sourceTree = "<group>"; };
 		4A7B6EAD7C07AA7A89C780E823F8A07D /* Pods-Maker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Maker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4CA032098601D17034F915734C41965F /* Pods-Maker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		50EE54ED42EEA9310AFD9D7E2D31A19A /* UITextField+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Maker.m"; sourceTree = "<group>"; };
+		53E4B77D34CF2929134AF3223759DED6 /* UILabel+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+Maker.h"; sourceTree = "<group>"; };
+		5C9FE95538859355431F8C422C76DDC9 /* Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Maker.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A640E416B573227D12803652ADD68D7 /* Pods-Maker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Maker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6ADCCB9A5478F680EC35DC6F30E06973 /* Pods-Maker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6D48B96A68BFA457FAE73BB0601AD9CE /* UIScrollView+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Maker.h"; sourceTree = "<group>"; };
+		6E69FA54DDD22B4D9128E93742EF7978 /* MakerUntil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
 		74CF95933877CAAB0BF3E24E23AECBE2 /* Pods-Maker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		75D223B5F552D16F4F4D60AB05EB1958 /* Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D223B5F552D16F4F4D60AB05EB1958 /* Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Maker.framework; path = Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		788863C55B78076755E646535AE654DE /* Pods-Maker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Maker_Example-umbrella.h"; sourceTree = "<group>"; };
 		795A44F5070FF306D887C135D5AA19E2 /* Pods-Maker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Maker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CBF88C7781EA3B5A813CAB5CD9C8FCC /* Pods-Maker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Maker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		805BDD1EB6B7E18E4E89FBEBF349B2C0 /* Pods-Maker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Maker_Tests.modulemap"; sourceTree = "<group>"; };
+		805BDD1EB6B7E18E4E89FBEBF349B2C0 /* Pods-Maker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Maker_Tests.modulemap"; sourceTree = "<group>"; };
 		81C9DA1D0E54DA77B88FF4C8A4C5EBA6 /* Maker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Maker-prefix.pch"; sourceTree = "<group>"; };
 		88550661941EB02DE86B1FE9CD1ED135 /* Pods-Maker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Maker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9723CC7A8BCA1496FA6E1BEB6F6D83C8 /* Maker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Maker.xcconfig; sourceTree = "<group>"; };
 		98B016656E1CFAF1278E0697F95DD26F /* Pods-Maker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DCF04ED9F520A3067103F0A2B8AA908 /* UIView+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Maker.h"; sourceTree = "<group>"; };
 		AE6F617CDEF82B2A64C84CA3DDCD1E67 /* Pods-Maker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AEE35DED089E9B53FC704DC05D8C0F75 /* Pods-Maker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Maker_Tests-dummy.m"; sourceTree = "<group>"; };
 		B33C152D974B30998F5A96C877D84C8E /* Maker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Maker-dummy.m"; sourceTree = "<group>"; };
+		C0479486643A718CFBA9C4AA57A239B3 /* UIScrollView+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Maker.m"; sourceTree = "<group>"; };
+		C1F6906544F2968926B655D3505177C3 /* UIImageView+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Maker.h"; sourceTree = "<group>"; };
+		C6B695EA97385064B9F196CB0E78C1B4 /* UIView+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
+		C856E34EA6CA20EF1CE805571C12EBF5 /* NSNumber+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Maker.m"; sourceTree = "<group>"; };
 		D66E90903C0095DC4D4B9E5BAAC9AFD5 /* Pods-Maker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Maker_Example-dummy.m"; sourceTree = "<group>"; };
-		DAE7BEF67E3326267F7D3A37453220FB /* Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Maker.modulemap; sourceTree = "<group>"; };
-		DB5D36AB3509FE2806416616486A48F9 /* Pods_Maker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACE7B3DFB4A680736F5B1E3BDF92A5B /* MakerUntil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
+		DAE7BEF67E3326267F7D3A37453220FB /* Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Maker.modulemap; sourceTree = "<group>"; };
+		DB5D36AB3509FE2806416616486A48F9 /* Pods_Maker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Maker_Example.framework; path = "Pods-Maker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC420435B01391B5780E376DCE82C23 /* UIImageView+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Maker.m"; sourceTree = "<group>"; };
+		E1160C9DD451BB168648B9D4FC3221C9 /* UILabel+Maker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Maker.m"; sourceTree = "<group>"; };
 		EC1FD708700C43948B552D5167D1C8BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF9E300A505BC02FACB1C91055CD1EF3 /* Pods-Maker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Maker_Example.modulemap"; sourceTree = "<group>"; };
-		F525F3311F5D470E000B6A6F /* UIView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Maker.h"; sourceTree = "<group>"; };
-		F525F3321F5D470E000B6A6F /* UIView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
-		F525F3341F5D470E000B6A6F /* UIButton+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Maker.h"; sourceTree = "<group>"; };
-		F525F3351F5D470E000B6A6F /* UIButton+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Maker.m"; sourceTree = "<group>"; };
-		F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Maker.h"; sourceTree = "<group>"; };
-		F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Maker.m"; sourceTree = "<group>"; };
-		F525F3381F5D470E000B6A6F /* UILabel+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Maker.h"; sourceTree = "<group>"; };
-		F525F3391F5D470E000B6A6F /* UILabel+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Maker.m"; sourceTree = "<group>"; };
-		F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Maker.h"; sourceTree = "<group>"; };
-		F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Maker.m"; sourceTree = "<group>"; };
-		F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Maker.h"; sourceTree = "<group>"; };
-		F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Maker.m"; sourceTree = "<group>"; };
-		F525F33F1F5D470E000B6A6F /* MakerUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
-		F525F3401F5D470E000B6A6F /* MakerUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
-		F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Maker.h"; sourceTree = "<group>"; };
-		F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Maker.m"; sourceTree = "<group>"; };
-		F525F3431F5D470E000B6A6F /* Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maker.h; sourceTree = "<group>"; };
+		EE40275CF7986D39D450D04D743BACFD /* UITextField+Maker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Maker.h"; sourceTree = "<group>"; };
+		EF9E300A505BC02FACB1C91055CD1EF3 /* Pods-Maker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Maker_Example.modulemap"; sourceTree = "<group>"; };
 		F9B72E9DC5CB7A37578A319317DDDBA5 /* Pods-Maker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Tests-resources.sh"; sourceTree = "<group>"; };
 		FF63ECBD5AF996F30B49EF1011F93BC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,19 +105,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB44970C099989181A482467FE53E19E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59F06D5498AF2F86A1A04AAD77B4EC8F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BD658EF16C7012EE27991E52F23EDD16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				611A452FBAFE0B5ED076CA8EACBAB675 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36BCC4605C5BEAAAE78F75BEF3F1DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902D762BCFECE8F2F1FE23520BE15C57 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +145,7 @@
 		2008A58CA0E2450115B7760332D352A8 /* Maker */ = {
 			isa = PBXGroup;
 			children = (
-				F525F32F1F5D470E000B6A6F /* Classes */,
+				65F601A37B13F62A70EDEB978C22443E /* Maker */,
 				B89292B707A85FF4AE7146F6CD150098 /* Support Files */,
 			);
 			name = Maker;
@@ -167,6 +167,39 @@
 				2008A58CA0E2450115B7760332D352A8 /* Maker */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		614F0C012A9DB65AB2724BD472C25238 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DACE7B3DFB4A680736F5B1E3BDF92A5B /* MakerUntil.h */,
+				6E69FA54DDD22B4D9128E93742EF7978 /* MakerUntil.m */,
+				40A97FF77666B8160B0CD126F9BA1B44 /* NSNumber+Maker.h */,
+				C856E34EA6CA20EF1CE805571C12EBF5 /* NSNumber+Maker.m */,
+			);
+			name = Lib;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		65F601A37B13F62A70EDEB978C22443E /* Maker */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E836244AB798841B1E28D676D34F6 /* Classes */,
+			);
+			name = Maker;
+			path = Maker;
+			sourceTree = "<group>";
+		};
+		6F7E836244AB798841B1E28D676D34F6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C9FE95538859355431F8C422C76DDC9 /* Maker.h */,
+				FFB9C2FE7505DD289B92851A240AFA1A /* Base */,
+				E8AA8DB4FEE5D945A39CD6AD6AA090B1 /* Comments */,
+				614F0C012A9DB65AB2724BD472C25238 /* Lib */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -238,80 +271,59 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F525F32F1F5D470E000B6A6F /* Classes */ = {
+		E8AA8DB4FEE5D945A39CD6AD6AA090B1 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
-				F525F3301F5D470E000B6A6F /* Base */,
-				F525F3331F5D470E000B6A6F /* Comments */,
-				F525F33E1F5D470E000B6A6F /* Lib */,
-				F525F3431F5D470E000B6A6F /* Maker.h */,
+				1BE5C166CA1FB73CBC2E7AD79EF580D9 /* UIButton+Maker.h */,
+				0F9978B0D3A8A2AF42B80A92E6F64F00 /* UIButton+Maker.m */,
+				C1F6906544F2968926B655D3505177C3 /* UIImageView+Maker.h */,
+				DFC420435B01391B5780E376DCE82C23 /* UIImageView+Maker.m */,
+				53E4B77D34CF2929134AF3223759DED6 /* UILabel+Maker.h */,
+				E1160C9DD451BB168648B9D4FC3221C9 /* UILabel+Maker.m */,
+				6D48B96A68BFA457FAE73BB0601AD9CE /* UIScrollView+Maker.h */,
+				C0479486643A718CFBA9C4AA57A239B3 /* UIScrollView+Maker.m */,
+				EE40275CF7986D39D450D04D743BACFD /* UITextField+Maker.h */,
+				50EE54ED42EEA9310AFD9D7E2D31A19A /* UITextField+Maker.m */,
 			);
-			name = Classes;
-			path = Maker/Classes;
-			sourceTree = "<group>";
-		};
-		F525F3301F5D470E000B6A6F /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F525F3311F5D470E000B6A6F /* UIView+Maker.h */,
-				F525F3321F5D470E000B6A6F /* UIView+Maker.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		F525F3331F5D470E000B6A6F /* Comments */ = {
-			isa = PBXGroup;
-			children = (
-				F525F3341F5D470E000B6A6F /* UIButton+Maker.h */,
-				F525F3351F5D470E000B6A6F /* UIButton+Maker.m */,
-				F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */,
-				F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */,
-				F525F3381F5D470E000B6A6F /* UILabel+Maker.h */,
-				F525F3391F5D470E000B6A6F /* UILabel+Maker.m */,
-				F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */,
-				F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */,
-				F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */,
-				F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */,
-			);
+			name = Comments;
 			path = Comments;
 			sourceTree = "<group>";
 		};
-		F525F33E1F5D470E000B6A6F /* Lib */ = {
+		FFB9C2FE7505DD289B92851A240AFA1A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F525F33F1F5D470E000B6A6F /* MakerUntil.h */,
-				F525F3401F5D470E000B6A6F /* MakerUntil.m */,
-				F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */,
-				F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */,
+				9DCF04ED9F520A3067103F0A2B8AA908 /* UIView+Maker.h */,
+				C6B695EA97385064B9F196CB0E78C1B4 /* UIView+Maker.m */,
 			);
-			path = Lib;
+			name = Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07372C2C90A67335304D091279DD3815 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F525F3481F5D470E000B6A6F /* UIImageView+Maker.h in Headers */,
-				F525F3541F5D470E000B6A6F /* Maker.h in Headers */,
-				F525F34C1F5D470E000B6A6F /* UIScrollView+Maker.h in Headers */,
-				F525F3521F5D470E000B6A6F /* NSNumber+Maker.h in Headers */,
-				F525F34E1F5D470E000B6A6F /* UITextField+Maker.h in Headers */,
-				F525F3441F5D470E000B6A6F /* UIView+Maker.h in Headers */,
-				173A028EF4150CC87768403DB959ECC3 /* Maker-umbrella.h in Headers */,
-				F525F3461F5D470E000B6A6F /* UIButton+Maker.h in Headers */,
-				F525F3501F5D470E000B6A6F /* MakerUntil.h in Headers */,
-				F525F34A1F5D470E000B6A6F /* UILabel+Maker.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D44EC6C579F192E9B2798D804FA04306 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E8E945A5A4DB9539371A21230574F457 /* Pods-Maker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B3715937AD3DC65C3780A30E5F73B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A0230640F3A372C0B89530B36E193B /* Maker-umbrella.h in Headers */,
+				34573F19814694BD5B308B17FCF06EB1 /* Maker.h in Headers */,
+				6233892C63291B93EDC0A259CEFF3697 /* MakerUntil.h in Headers */,
+				6F1E489479534E45EB6F6DA0C8DFC83C /* NSNumber+Maker.h in Headers */,
+				ABCF66ADA923855EAE6B6CDF496CA0D6 /* UIButton+Maker.h in Headers */,
+				3FBC30B0059464B5809B30A04F506C0E /* UIImageView+Maker.h in Headers */,
+				4BF6B00AD406D500C3D0F42CD54C216A /* UILabel+Maker.h in Headers */,
+				6090DACEE9AC1049B41BCEB87533806D /* UIScrollView+Maker.h in Headers */,
+				1BF6F92B69B7C70AF1F0C0EE27CCCC77 /* UITextField+Maker.h in Headers */,
+				94A01F6778A334B041F4ACB768A8F503 /* UIView+Maker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,13 +373,13 @@
 			productReference = DB5D36AB3509FE2806416616486A48F9 /* Pods_Maker_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB14A048B57035D3138BEA8A23BE3923 /* Maker */ = {
+		F275F75ABACBDB7A5510336BE29C0E0E /* Maker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A84156253F8C4AF7BCF4E3D3A79FABE2 /* Build configuration list for PBXNativeTarget "Maker" */;
+			buildConfigurationList = 5935487E5446B02E21A2197CE6E30D7D /* Build configuration list for PBXNativeTarget "Maker" */;
 			buildPhases = (
-				96C10D5710E10E11F48F23E48345FC92 /* Sources */,
-				AB44970C099989181A482467FE53E19E /* Frameworks */,
-				07372C2C90A67335304D091279DD3815 /* Headers */,
+				0104B9E884747DBC2EE121DBC2227FC6 /* Sources */,
+				F36BCC4605C5BEAAAE78F75BEF3F1DED /* Frameworks */,
+				D9B3715937AD3DC65C3780A30E5F73B7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -399,7 +411,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB14A048B57035D3138BEA8A23BE3923 /* Maker */,
+				F275F75ABACBDB7A5510336BE29C0E0E /* Maker */,
 				3AE696E2993A80051A7C7E54AE09657E /* Pods-Maker_Example */,
 				333B72D902DC6328641AAD06E33F06A9 /* Pods-Maker_Tests */,
 			);
@@ -407,6 +419,22 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0104B9E884747DBC2EE121DBC2227FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559CFBD168A501CEDC98E49645EAF04F /* Maker-dummy.m in Sources */,
+				F0AA0625EEA13DA359E5CD94A1C66F36 /* MakerUntil.m in Sources */,
+				CC0A24252735255A54F2B834BBFFCF71 /* NSNumber+Maker.m in Sources */,
+				4E4D77ED7C57B667E50274A181E1B55B /* UIButton+Maker.m in Sources */,
+				245E2E3F97BA88D118850A6D5137D7A2 /* UIImageView+Maker.m in Sources */,
+				673FC1F43721E55E66E3D2FE30BB8F86 /* UILabel+Maker.m in Sources */,
+				A5CA992307D7663FBE0098EA32A8A42D /* UIScrollView+Maker.m in Sources */,
+				B3546976DC763D0BE85C9A15971C0C8D /* UITextField+Maker.m in Sources */,
+				83CA483CDA6A1827D852642047BBE1A6 /* UIView+Maker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F62FF9D23FC33B658A51FB1FF4FFE50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,35 +451,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96C10D5710E10E11F48F23E48345FC92 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F525F3471F5D470E000B6A6F /* UIButton+Maker.m in Sources */,
-				F525F3491F5D470E000B6A6F /* UIImageView+Maker.m in Sources */,
-				F525F34D1F5D470E000B6A6F /* UIScrollView+Maker.m in Sources */,
-				F525F3511F5D470E000B6A6F /* MakerUntil.m in Sources */,
-				F525F34F1F5D470E000B6A6F /* UITextField+Maker.m in Sources */,
-				56342A953D04E9583BA4CE1B6BE38BEB /* Maker-dummy.m in Sources */,
-				F525F3531F5D470E000B6A6F /* NSNumber+Maker.m in Sources */,
-				F525F3451F5D470E000B6A6F /* UIView+Maker.m in Sources */,
-				F525F34B1F5D470E000B6A6F /* UILabel+Maker.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		DFEA19C2309F08F56BBE36032A1D228E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Maker;
-			target = BB14A048B57035D3138BEA8A23BE3923 /* Maker */;
+			target = F275F75ABACBDB7A5510336BE29C0E0E /* Maker */;
 			targetProxy = B677107FB2F8B4B1111E2805B89FB41C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2AC14227FB31E476E29331B309A1C0C4 /* Debug */ = {
+		1BE1049DFDEA74FBE8153C8371978266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9723CC7A8BCA1496FA6E1BEB6F6D83C8 /* Maker.xcconfig */;
 			buildSettings = {
@@ -460,7 +472,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -473,7 +485,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Maker/Maker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Maker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -481,7 +493,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -530,38 +542,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		49597C71ACE6761F0021BBFDDE64DA9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9723CC7A8BCA1496FA6E1BEB6F6D83C8 /* Maker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Maker/Maker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Maker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Maker/Maker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Maker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		511D4D1686FDBA8A19407F7477A41C8B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -715,6 +695,38 @@
 			};
 			name = Release;
 		};
+		CB8AD5491FF3578D642DE41891531A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9723CC7A8BCA1496FA6E1BEB6F6D83C8 /* Maker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Maker/Maker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Maker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Maker/Maker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Maker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D0DEE4EDDCC0A73B7B11008426B532C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74CF95933877CAAB0BF3E24E23AECBE2 /* Pods-Maker_Tests.release.xcconfig */;
@@ -763,20 +775,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5935487E5446B02E21A2197CE6E30D7D /* Build configuration list for PBXNativeTarget "Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8AD5491FF3578D642DE41891531A47 /* Debug */,
+				1BE1049DFDEA74FBE8153C8371978266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		85C7D28933E0D473CB255A3D57A4D207 /* Build configuration list for PBXNativeTarget "Pods-Maker_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7515CB4CE8A47A585578227D845B4BE2 /* Debug */,
 				8497747DE7E1CA1012CCCC6E57C3C80D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A84156253F8C4AF7BCF4E3D3A79FABE2 /* Build configuration list for PBXNativeTarget "Maker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AC14227FB31E476E29331B309A1C0C4 /* Debug */,
-				49597C71ACE6761F0021BBFDDE64DA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

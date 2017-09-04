@@ -1,18 +1,18 @@
 {
   "name": "Maker",
   "version": "0.1.0",
-  "summary": "A short description of Maker.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/forkingghost/Maker",
+  "summary": "Maker是一个使用链式思想快速创建UIKit控件",
+  "description": "Maker 是一个使用链式语法实现UIKit控件的Category，快速开发，代码量少，使用方便。",
+  "homepage": "https://github.com/Bartholomewo/Maker2",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "forkingghost": "kuma15@163.com"
+    "Bartholomewo": "kuma15@163.com"
   },
   "source": {
-    "git": "https://github.com/forkingghost/Maker.git",
+    "git": "https://github.com/Bartholomewo/Maker2.git",
     "tag": "0.1.0"
   },
   "platforms": {

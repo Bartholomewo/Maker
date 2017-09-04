@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Maker
 
-Copyright (c) 2017 forkingghost <kuma15@163.com>
+Copyright (c) 2017 Bartholoewo <kuma@15@163.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
