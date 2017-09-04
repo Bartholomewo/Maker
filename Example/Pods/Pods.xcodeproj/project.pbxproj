@@ -14,9 +14,25 @@
 		59F06D5498AF2F86A1A04AAD77B4EC8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		611A452FBAFE0B5ED076CA8EACBAB675 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7638587CF32BE6F0513C1E9DE5672109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C2A860B085D2DE5B14F7EF9EC2495282 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 28193426792748C661E46CF2C25935AE /* ReplaceMe.m */; };
 		D9EA10FFCC0360643305279E8EBF7077 /* Pods-Maker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A640E416B573227D12803652ADD68D7 /* Pods-Maker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8E945A5A4DB9539371A21230574F457 /* Pods-Maker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 788863C55B78076755E646535AE654DE /* Pods-Maker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F525F3441F5D470E000B6A6F /* UIView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3311F5D470E000B6A6F /* UIView+Maker.h */; };
+		F525F3451F5D470E000B6A6F /* UIView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3321F5D470E000B6A6F /* UIView+Maker.m */; };
+		F525F3461F5D470E000B6A6F /* UIButton+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3341F5D470E000B6A6F /* UIButton+Maker.h */; };
+		F525F3471F5D470E000B6A6F /* UIButton+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3351F5D470E000B6A6F /* UIButton+Maker.m */; };
+		F525F3481F5D470E000B6A6F /* UIImageView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */; };
+		F525F3491F5D470E000B6A6F /* UIImageView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */; };
+		F525F34A1F5D470E000B6A6F /* UILabel+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3381F5D470E000B6A6F /* UILabel+Maker.h */; };
+		F525F34B1F5D470E000B6A6F /* UILabel+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3391F5D470E000B6A6F /* UILabel+Maker.m */; };
+		F525F34C1F5D470E000B6A6F /* UIScrollView+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */; };
+		F525F34D1F5D470E000B6A6F /* UIScrollView+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */; };
+		F525F34E1F5D470E000B6A6F /* UITextField+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */; };
+		F525F34F1F5D470E000B6A6F /* UITextField+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */; };
+		F525F3501F5D470E000B6A6F /* MakerUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F33F1F5D470E000B6A6F /* MakerUntil.h */; };
+		F525F3511F5D470E000B6A6F /* MakerUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3401F5D470E000B6A6F /* MakerUntil.m */; };
+		F525F3521F5D470E000B6A6F /* NSNumber+Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */; };
+		F525F3531F5D470E000B6A6F /* NSNumber+Maker.m in Sources */ = {isa = PBXBuildFile; fileRef = F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */; };
+		F525F3541F5D470E000B6A6F /* Maker.h in Headers */ = {isa = PBXBuildFile; fileRef = F525F3431F5D470E000B6A6F /* Maker.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02745E3E8D22DB4731A6394B85778A8C /* Pods_Maker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Maker_Tests.framework; path = "Pods-Maker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28193426792748C661E46CF2C25935AE /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		02745E3E8D22DB4731A6394B85778A8C /* Pods_Maker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2876E83313F7F06198477135A0BC2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCB742BF7A51B8527FE7ADC414BF627 /* Pods-Maker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Example-resources.sh"; sourceTree = "<group>"; };
 		38BA0C5B28ACB61608A97D95A6EB6A58 /* Pods-Maker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -42,24 +57,41 @@
 		6A640E416B573227D12803652ADD68D7 /* Pods-Maker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Maker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6ADCCB9A5478F680EC35DC6F30E06973 /* Pods-Maker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		74CF95933877CAAB0BF3E24E23AECBE2 /* Pods-Maker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		75D223B5F552D16F4F4D60AB05EB1958 /* Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Maker.framework; path = Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D223B5F552D16F4F4D60AB05EB1958 /* Maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		788863C55B78076755E646535AE654DE /* Pods-Maker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Maker_Example-umbrella.h"; sourceTree = "<group>"; };
 		795A44F5070FF306D887C135D5AA19E2 /* Pods-Maker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Maker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CBF88C7781EA3B5A813CAB5CD9C8FCC /* Pods-Maker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Maker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		805BDD1EB6B7E18E4E89FBEBF349B2C0 /* Pods-Maker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Maker_Tests.modulemap"; sourceTree = "<group>"; };
+		805BDD1EB6B7E18E4E89FBEBF349B2C0 /* Pods-Maker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Maker_Tests.modulemap"; sourceTree = "<group>"; };
 		81C9DA1D0E54DA77B88FF4C8A4C5EBA6 /* Maker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Maker-prefix.pch"; sourceTree = "<group>"; };
 		88550661941EB02DE86B1FE9CD1ED135 /* Pods-Maker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Maker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9723CC7A8BCA1496FA6E1BEB6F6D83C8 /* Maker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Maker.xcconfig; sourceTree = "<group>"; };
 		98B016656E1CFAF1278E0697F95DD26F /* Pods-Maker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE6F617CDEF82B2A64C84CA3DDCD1E67 /* Pods-Maker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Maker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AEE35DED089E9B53FC704DC05D8C0F75 /* Pods-Maker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Maker_Tests-dummy.m"; sourceTree = "<group>"; };
 		B33C152D974B30998F5A96C877D84C8E /* Maker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Maker-dummy.m"; sourceTree = "<group>"; };
 		D66E90903C0095DC4D4B9E5BAAC9AFD5 /* Pods-Maker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Maker_Example-dummy.m"; sourceTree = "<group>"; };
-		DAE7BEF67E3326267F7D3A37453220FB /* Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Maker.modulemap; sourceTree = "<group>"; };
-		DB5D36AB3509FE2806416616486A48F9 /* Pods_Maker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Maker_Example.framework; path = "Pods-Maker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE7BEF67E3326267F7D3A37453220FB /* Maker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Maker.modulemap; sourceTree = "<group>"; };
+		DB5D36AB3509FE2806416616486A48F9 /* Pods_Maker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1FD708700C43948B552D5167D1C8BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF9E300A505BC02FACB1C91055CD1EF3 /* Pods-Maker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Maker_Example.modulemap"; sourceTree = "<group>"; };
+		EF9E300A505BC02FACB1C91055CD1EF3 /* Pods-Maker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Maker_Example.modulemap"; sourceTree = "<group>"; };
+		F525F3311F5D470E000B6A6F /* UIView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Maker.h"; sourceTree = "<group>"; };
+		F525F3321F5D470E000B6A6F /* UIView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Maker.m"; sourceTree = "<group>"; };
+		F525F3341F5D470E000B6A6F /* UIButton+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Maker.h"; sourceTree = "<group>"; };
+		F525F3351F5D470E000B6A6F /* UIButton+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Maker.m"; sourceTree = "<group>"; };
+		F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Maker.h"; sourceTree = "<group>"; };
+		F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Maker.m"; sourceTree = "<group>"; };
+		F525F3381F5D470E000B6A6F /* UILabel+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Maker.h"; sourceTree = "<group>"; };
+		F525F3391F5D470E000B6A6F /* UILabel+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Maker.m"; sourceTree = "<group>"; };
+		F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Maker.h"; sourceTree = "<group>"; };
+		F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Maker.m"; sourceTree = "<group>"; };
+		F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Maker.h"; sourceTree = "<group>"; };
+		F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Maker.m"; sourceTree = "<group>"; };
+		F525F33F1F5D470E000B6A6F /* MakerUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerUntil.h; sourceTree = "<group>"; };
+		F525F3401F5D470E000B6A6F /* MakerUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerUntil.m; sourceTree = "<group>"; };
+		F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Maker.h"; sourceTree = "<group>"; };
+		F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Maker.m"; sourceTree = "<group>"; };
+		F525F3431F5D470E000B6A6F /* Maker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maker.h; sourceTree = "<group>"; };
 		F9B72E9DC5CB7A37578A319317DDDBA5 /* Pods-Maker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Maker_Tests-resources.sh"; sourceTree = "<group>"; };
 		FF63ECBD5AF996F30B49EF1011F93BC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +145,7 @@
 		2008A58CA0E2450115B7760332D352A8 /* Maker */ = {
 			isa = PBXGroup;
 			children = (
-				419025D8FCB425DA5CDB09FDA1E371FC /* Maker */,
+				F525F32F1F5D470E000B6A6F /* Classes */,
 				B89292B707A85FF4AE7146F6CD150098 /* Support Files */,
 			);
 			name = Maker;
@@ -135,24 +167,6 @@
 				2008A58CA0E2450115B7760332D352A8 /* Maker */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		419025D8FCB425DA5CDB09FDA1E371FC /* Maker */ = {
-			isa = PBXGroup;
-			children = (
-				78742898256E164D9F16E9CCD39C3F19 /* Classes */,
-			);
-			name = Maker;
-			path = Maker;
-			sourceTree = "<group>";
-		};
-		78742898256E164D9F16E9CCD39C3F19 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				28193426792748C661E46CF2C25935AE /* ReplaceMe.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -224,6 +238,55 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F525F32F1F5D470E000B6A6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F525F3301F5D470E000B6A6F /* Base */,
+				F525F3331F5D470E000B6A6F /* Comments */,
+				F525F33E1F5D470E000B6A6F /* Lib */,
+				F525F3431F5D470E000B6A6F /* Maker.h */,
+			);
+			name = Classes;
+			path = Maker/Classes;
+			sourceTree = "<group>";
+		};
+		F525F3301F5D470E000B6A6F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F525F3311F5D470E000B6A6F /* UIView+Maker.h */,
+				F525F3321F5D470E000B6A6F /* UIView+Maker.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F525F3331F5D470E000B6A6F /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				F525F3341F5D470E000B6A6F /* UIButton+Maker.h */,
+				F525F3351F5D470E000B6A6F /* UIButton+Maker.m */,
+				F525F3361F5D470E000B6A6F /* UIImageView+Maker.h */,
+				F525F3371F5D470E000B6A6F /* UIImageView+Maker.m */,
+				F525F3381F5D470E000B6A6F /* UILabel+Maker.h */,
+				F525F3391F5D470E000B6A6F /* UILabel+Maker.m */,
+				F525F33A1F5D470E000B6A6F /* UIScrollView+Maker.h */,
+				F525F33B1F5D470E000B6A6F /* UIScrollView+Maker.m */,
+				F525F33C1F5D470E000B6A6F /* UITextField+Maker.h */,
+				F525F33D1F5D470E000B6A6F /* UITextField+Maker.m */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		F525F33E1F5D470E000B6A6F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F525F33F1F5D470E000B6A6F /* MakerUntil.h */,
+				F525F3401F5D470E000B6A6F /* MakerUntil.m */,
+				F525F3411F5D470E000B6A6F /* NSNumber+Maker.h */,
+				F525F3421F5D470E000B6A6F /* NSNumber+Maker.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -231,7 +294,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F525F3481F5D470E000B6A6F /* UIImageView+Maker.h in Headers */,
+				F525F3541F5D470E000B6A6F /* Maker.h in Headers */,
+				F525F34C1F5D470E000B6A6F /* UIScrollView+Maker.h in Headers */,
+				F525F3521F5D470E000B6A6F /* NSNumber+Maker.h in Headers */,
+				F525F34E1F5D470E000B6A6F /* UITextField+Maker.h in Headers */,
+				F525F3441F5D470E000B6A6F /* UIView+Maker.h in Headers */,
 				173A028EF4150CC87768403DB959ECC3 /* Maker-umbrella.h in Headers */,
+				F525F3461F5D470E000B6A6F /* UIButton+Maker.h in Headers */,
+				F525F3501F5D470E000B6A6F /* MakerUntil.h in Headers */,
+				F525F34A1F5D470E000B6A6F /* UILabel+Maker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +427,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F525F3471F5D470E000B6A6F /* UIButton+Maker.m in Sources */,
+				F525F3491F5D470E000B6A6F /* UIImageView+Maker.m in Sources */,
+				F525F34D1F5D470E000B6A6F /* UIScrollView+Maker.m in Sources */,
+				F525F3511F5D470E000B6A6F /* MakerUntil.m in Sources */,
+				F525F34F1F5D470E000B6A6F /* UITextField+Maker.m in Sources */,
 				56342A953D04E9583BA4CE1B6BE38BEB /* Maker-dummy.m in Sources */,
-				C2A860B085D2DE5B14F7EF9EC2495282 /* ReplaceMe.m in Sources */,
+				F525F3531F5D470E000B6A6F /* NSNumber+Maker.m in Sources */,
+				F525F3451F5D470E000B6A6F /* UIView+Maker.m in Sources */,
+				F525F34B1F5D470E000B6A6F /* UILabel+Maker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
