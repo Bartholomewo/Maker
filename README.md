@@ -65,7 +65,7 @@ UIScrollView: scr_
 UIImageView: img_
 ```
 
-####比较（使用Maker能减少一大部分代码量，并且更直观易懂）
+#### 比较（使用Maker能减少一大部分代码量，并且更直观易懂）
 
 ```objective-c
 UILabel *label = [[UILabel alloc] init];
