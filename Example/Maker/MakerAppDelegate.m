@@ -7,13 +7,16 @@
 //
 
 #import "MakerAppDelegate.h"
+#import "MakerViewController.h"
 
 @implementation MakerAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[MakerViewController new]]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -1,5 +1,5 @@
 PODS:
-  - Maker (0.1.0)
+  - Maker (0.1.2)
 
 DEPENDENCIES:
   - Maker (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Maker: e6cbd611ccb8b8245d568c1ec4db8a257e81cbe5
+  Maker: ccd486b5d5adfef840b3b06f87927eceaddbf906
 
 PODFILE CHECKSUM: e60aac398100c079c0fbef321c2418242fc34750
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.1.1

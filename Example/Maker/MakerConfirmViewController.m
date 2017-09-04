@@ -9,39 +9,45 @@
 #import "MakerConfirmViewController.h"
 #import <Maker/Maker.h>
 
-@interface MakerConfirmViewController ()
+static NSString *identifier = @"identifier";
+
+@interface MakerConfirmViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation MakerConfirmViewController
+@implementation MakerConfirmViewController {
+    UITableView *_tableView;
+    NSArray *_datas;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _datas = @[@"UIView", @"UILabel", @"UIButton"];
+    
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    //CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     
-    __weak typeof(self) weakSelf = self;
-    UIButton.maker
+    _tableView = [UITableView maker:mk_Plain]
     .com_setup(self.view)
-    .com_frame((screenWidth-60)/2+10, 410, (screenWidth-60)/2-5, 30)
-    .com_backgroundColor(@"#FF8802")
-    .com_cornerRadius(5.0)
-    .btn_title(@"Pop", mk_Normal)
-    .btn_titleColor(@"#FFFFFF", mk_Normal)
-    .btn_font1(13)
-    .btn_actionBlock(mk_TouchUpInside, ^(id sender) {
-        [weakSelf dismissViewControllerAnimated:YES completion:nil];
-    });
-    
+    .com_frame(0, 0, screenWidth, screenHeight)
+    .tab_delegateAndDataSource(self)
+    .tab_tHeaderView(UIView.maker)
+    .tab_tFooterView(UIView.maker)
+    .tab_registerCell([UITableViewCell class], nil, identifier);
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _datas.count;
+}
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.textLabel.text = _datas[indexPath.row];
+    return cell;
 }
 
 - (void)dealloc {
-    NSLog(@"123123");
+    NSLog(@"dealloc");
 }
 
 

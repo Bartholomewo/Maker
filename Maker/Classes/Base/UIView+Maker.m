@@ -30,6 +30,16 @@
         return self;
     };
 }
+- (UIView *(^)(MK_COLOR, MK_FLOAT)) com_backgroundColor2 {
+    return ^(MK_COLOR color, MK_FLOAT alpha) {
+        if ([color isKindOfClass:[UIColor class]]) {
+            self.backgroundColor = [(UIColor *)color colorWithAlphaComponent:alpha];
+        } else {
+            self.backgroundColor = [[MakerUntil mk_colorWithHexString:color] colorWithAlphaComponent:alpha];
+        }
+        return self;
+    };
+}
 - (UIView *(^)(MK_FLOAT)) com_alpha {
     return ^(MK_FLOAT alpha) {
         self.alpha = alpha;
@@ -170,6 +180,25 @@
 - (UIScrollView *(^)(MK_FLOAT)) scr_zoomScale { MK_RETURNNIL; }
 - (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom { MK_RETURNNIL; }
 - (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode { MK_RETURNNIL; }
-
 @end
 
+
+#pragma mark ================== UIView + MKUITableView ====================
+@implementation UIView (MKUITableView)
+- (UITableView *(^)(id)) tab_delegateAndDataSource { MK_RETURNNIL; }
+- (UITableView *(^)(id)) tab_delegate { MK_RETURNNIL; }
+- (UITableView *(^)(id)) tab_dataSource { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_rowHeight { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_sHeaderHeight { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_sFooterHeight { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_eRowHeight { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_esHeaderHeight { MK_RETURNNIL; }
+- (UITableView *(^)(MK_FLOAT)) tab_esFooterHeight { MK_RETURNNIL; }
+- (UITableView *(^)(UIEdgeInsets)) tab_separatorInset { MK_RETURNNIL; }
+- (UITableView *(^)(MK_UIVIEW)) tab_backgroundView { MK_RETURNNIL; }
+- (UITableView *(^)(MK_UIVIEW)) tab_tHeaderView { MK_RETURNNIL; }
+- (UITableView *(^)(MK_UIVIEW)) tab_tFooterView { MK_RETURNNIL; }
+- (UITableView *(^)()) tab_noneSeparatorStyle { MK_RETURNNIL; }
+- (UITableView *(^)(Class, UINib*, MK_STRING)) tab_registerCell { MK_RETURNNIL; }
+- (UITableView *(^)(Class, UINib*, MK_STRING)) tab_registerHeaderFooter { MK_RETURNNIL; }
+@end

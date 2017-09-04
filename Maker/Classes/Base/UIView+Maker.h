@@ -17,6 +17,8 @@
 - (UIView *(^)(MK_FLOAT, MK_FLOAT, MK_FLOAT, MK_FLOAT)) com_frame;
 /** 设置UIView背景颜色 */
 - (UIView *(^)(MK_COLOR)) com_backgroundColor;
+/** 设置UIView的透明度，颜色、透明度*/
+- (UIView *(^)(MK_COLOR, MK_FLOAT)) com_backgroundColor2;
 /** 设置UIView透明度 */
 - (UIView *(^)(MK_FLOAT)) com_alpha;
 /** 设置UIView是否隐藏 */
@@ -172,4 +174,42 @@
 - (UIScrollView *(^)(MK_BOOL)) scr_bouncesZoom;
 /** 设置ScrollView的bounces*/
 - (UIScrollView *(^)(MKScrollViewKeyboardDismissMode)) scr_keyboardDismissMode;
+@end
+
+
+
+#pragma mark ================== UIView + MKUITableView ====================
+@interface UIView (MKUITableView)
+/** 设置UITableView的delegate和dataSource */
+- (UITableView *(^)(id)) tab_delegateAndDataSource;
+/** 设置UITableView的delegate */
+- (UITableView *(^)(id)) tab_delegate;
+/** 设置UITableView的dataSource */
+- (UITableView *(^)(id)) tab_dataSource;
+/** 设置UITableView的rowHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_rowHeight;
+/** 设置UITableView的sectionHeaderHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_sHeaderHeight;
+/** 设置UITableView的sectionFooterHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_sFooterHeight;
+/** 设置UITableView的estimatedRowHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_eRowHeight;
+/** 设置UITableView的estimatedSectionHeaderHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_esHeaderHeight;
+/** 设置UITableView的estimatedSectionFooterHeight */
+- (UITableView *(^)(MK_FLOAT)) tab_esFooterHeight;
+/** 设置UITableView的UIEdgeInsets */
+- (UITableView *(^)(UIEdgeInsets)) tab_separatorInset;
+/** 设置UITableView的backgroundView */
+- (UITableView *(^)(MK_UIVIEW)) tab_backgroundView;
+/** 设置UITableView的tableHeaderView */
+- (UITableView *(^)(MK_UIVIEW)) tab_tHeaderView;
+/** 设置UITableView的tableFooterView */
+- (UITableView *(^)(MK_UIVIEW)) tab_tFooterView;
+/** 设置UITableView的separatorStyle */
+- (UITableView *(^)()) tab_noneSeparatorStyle;
+/** 设置UITableView的cell registerClass - nib - identifier */
+- (UITableView *(^)(Class, UINib*, MK_STRING)) tab_registerCell;
+/** 设置UITableView的header,footer registerClass - nib - identifier*/
+- (UITableView *(^)(Class, UINib*, MK_STRING)) tab_registerHeaderFooter;
 @end

@@ -16,5 +16,6 @@
 #import "UITextField+Maker.h"
 #import "NSNumber+Maker.h"
 #import "UIScrollView+Maker.h"
+#import "UITableView+Maker.h"
 
 #endif /* Maker_h */

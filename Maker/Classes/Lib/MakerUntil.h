@@ -137,6 +137,12 @@ typedef NS_ENUM(NSInteger, MKScrollViewKeyboardDismissMode) {
     mk_DisInteractive, // the keyboard follows the dragging touch off screen, and may be pulled upward again to cancel the dismiss
 } NS_ENUM_AVAILABLE_IOS(7_0);
 
+// UITableView的UITableViewStyle模式
+typedef NS_ENUM(NSInteger, MKTableViewStyle) {
+    mk_Plain,          // regular table view
+    mk_Grouped         // preferences style table view
+};
+
 // Button点击事件
 static char *mk_buttonPressedKey = "mk_buttonPressedKey";
 typedef void(^MKButtonPressedBlock)(UIButton *button);
@@ -178,7 +184,10 @@ typedef void(^MKTextChangeBlock)(NSString *text);
 // UIScrollViewIndicatorStyle
 + (UIScrollViewIndicatorStyle) mk_scrollViewIndicatorStyle:(MKScrollViewIndicatorStyle)option;
 
-// UIScrollViewIndicatorStyle
+// UIScrollViewKeyboardDismissMode
 + (UIScrollViewKeyboardDismissMode) mk_scrollViewKeyboardDismissModel:(MKScrollViewKeyboardDismissMode)option;
+
+// UITableViewStyle
++ (UITableViewStyle) mk_tableViewStyle:(MKTableViewStyle)option;
 
 @end

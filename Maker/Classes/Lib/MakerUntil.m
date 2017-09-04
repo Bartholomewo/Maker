@@ -64,5 +64,8 @@
 + (UIScrollViewKeyboardDismissMode) mk_scrollViewKeyboardDismissModel:(MKScrollViewKeyboardDismissMode)option {
     return (UIScrollViewKeyboardDismissMode)option;
 }
++ (UITableViewStyle) mk_tableViewStyle:(MKTableViewStyle)option {
+    return (UITableViewStyle)option;
+}
 
 @end

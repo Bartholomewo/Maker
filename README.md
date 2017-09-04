@@ -21,6 +21,7 @@ Bartholomewo, kuma15@163.com
 
 |  版本  |           更新            |
 | :--: | :---------------------: |
+| 0.13 |    增加UITableView，增加com_backgroundColor2     |
 | 0.12 |    去除UITextField的通知     |
 | 0.11 | 增加UITextField的字符限制，控制功能 |
 | 0.10 |          发布版本           |
@@ -33,7 +34,7 @@ Maker是一个使用链式语法实现的UIKit控件的小小的框架，轻松�
 
 现在支持的控件：
 
-**UIView** / **UILabel** / **UIButton** / **UITextField** / **UIImageView** / **UIScrollView**
+**UIView** / **UILabel** / **UIButton** / **UITextField** / **UIImageView** / **UIScrollView** / **UITableView**/
 
 其他的还在努力coding中。
 
@@ -52,6 +53,7 @@ UIButton: btn_
 UITextField: tf_
 UIScrollView: scr_
 UIImageView: img_
+UITableView: tab_
 ```
 
 #### 比较（使用Maker能减少一大部分代码量，并且更直观易懂）
@@ -84,9 +86,12 @@ UILabel *label = UILabel.maker
 #### 注意：
 
 ```objective-c
-在使用Button的点击事件，TextField的ValueChange事件的时候，如果在Block块中使用了self,请在Button上方加入：
+1. 在使用Button的点击事件，TextField的ValueChange事件的时候，如果在Block块中使用了self,请在Button上方加入：
 __weak typeof(self) weakSelf = self;
 解除循环引用
+
+2. UITableView的另一种初始化
+_tableView = [UITableView maker:mk_Plain]
 ```
 
 > 如果感觉好用并且希望提供更多的功能，请联系kuma15@163.com，或者fork之后提供更好的功能改进。
