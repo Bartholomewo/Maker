@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Maker'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Maker.'
+  s.summary          = 'Maker是一个使用链式思想快速创建UIKit控件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Maker 是一个使用链式语法实现UIKit控件的Category，快速开发，代码量少，使用方便。
                        DESC
 
-  s.homepage         = 'https://github.com/forkingghost/Maker'
+  s.homepage         = 'https://github.com/Bartholomewo/Maker2'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'forkingghost' => 'kuma15@163.com' }
-  s.source           = { :git => 'https://github.com/forkingghost/Maker.git', :tag => s.version.to_s }
+  s.author           = { 'Bartholomewo' => 'kuma15@163.com' }
+  s.source           = { :git => 'https://github.com/Bartholomewo/Maker2.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

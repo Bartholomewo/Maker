@@ -1,0 +1,22 @@
+{
+  "name": "Maker",
+  "version": "0.1.0",
+  "summary": "A short description of Maker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/forkingghost/Maker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "forkingghost": "kuma15@163.com"
+  },
+  "source": {
+    "git": "https://github.com/forkingghost/Maker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Maker/Classes/**/*"
+}

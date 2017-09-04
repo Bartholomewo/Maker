@@ -1,0 +1,6 @@
+framework module Maker {
+  umbrella header "Maker-umbrella.h"
+
+  export *
+  module * { export * }
+}

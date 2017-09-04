@@ -1,0 +1,16 @@
+PODS:
+  - Maker (0.1.0)
+
+DEPENDENCIES:
+  - Maker (from `../`)
+
+EXTERNAL SOURCES:
+  Maker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Maker: c608a5a15da7d9e6c63e6bdf2145269447100e59
+
+PODFILE CHECKSUM: e60aac398100c079c0fbef321c2418242fc34750
+
+COCOAPODS: 1.2.1
