@@ -9,6 +9,8 @@
 #import "MakerViewController.h"
 #import <Maker/Maker.h>
 
+#import "MakerConfirmViewController.h"
+
 @interface MakerViewController ()
 
 @end
@@ -23,6 +25,8 @@
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
+    __weak typeof(self) weakSelf = self;
     
     UIScrollView *mainScrollView = UIScrollView.maker
     .com_setup(self.view)
@@ -57,6 +61,7 @@
     .lab_textColor(@"#999999")
     .lab_font2(13, 0.0, nil);
     
+
     UIButton.maker
     .com_setup(cardView)
     .com_frame(10, 410, (screenWidth-60)/2-5, 30)
@@ -79,7 +84,8 @@
     .btn_titleColor(@"#FFFFFF", mk_Normal)
     .btn_font1(13)
     .btn_actionBlock(mk_TouchUpInside, ^(id sender) {
-        NSLog(@"立即下单");
+        MakerConfirmViewController *confirm = [[MakerConfirmViewController alloc] init];
+        [weakSelf presentViewController:confirm animated:YES completion:nil];
     });
     
     
@@ -92,7 +98,6 @@
     .com_setup(textFieldView)
     .com_frame(10, 10, textFieldView.frame.size.width - 20, 30)
     .tf_style(mk_RoundedRect)
-    .tf_notification()
     .tf_delegate()
     .tf_maxLength(10)
     .tf_optionBlock(^(){

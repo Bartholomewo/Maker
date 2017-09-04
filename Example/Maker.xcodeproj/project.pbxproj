@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		883D2E35AB4D4DF293B0F76D /* Pods_Maker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E559882F8E496E78D5B8BC7 /* Pods_Maker_Tests.framework */; };
 		A27649097864BDEE78C5C684 /* Pods_Maker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093C84FAE7F9F526290EE78A /* Pods_Maker_Example.framework */; };
+		F5BAFA3D1F5D619C00FA87E1 /* MakerConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BAFA3C1F5D619C00FA87E1 /* MakerConfirmViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		931EAC9C87E942B2DFB602CD /* Maker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Maker.podspec; path = ../Maker.podspec; sourceTree = "<group>"; };
 		AA36E082CE3A002D7A99CAAA /* Pods-Maker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maker_Tests/Pods-Maker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF7BED94A42E570B500E9434 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F5BAFA3B1F5D619C00FA87E1 /* MakerConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakerConfirmViewController.h; sourceTree = "<group>"; };
+		F5BAFA3C1F5D619C00FA87E1 /* MakerConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakerConfirmViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MakerViewController.h */,
 				6003F5A6195388D20070C39A /* MakerViewController.m */,
+				F5BAFA3B1F5D619C00FA87E1 /* MakerConfirmViewController.h */,
+				F5BAFA3C1F5D619C00FA87E1 /* MakerConfirmViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -394,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BAFA3D1F5D619C00FA87E1 /* MakerConfirmViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MakerAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MakerViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

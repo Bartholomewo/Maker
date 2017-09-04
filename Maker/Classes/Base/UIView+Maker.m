@@ -146,8 +146,6 @@
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_leftView { MK_RETURNNIL; }
 - (UITextField *(^)(MK_UIVIEW, MKTextFieldViewModeOption)) tf_rightView { MK_RETURNNIL; }
 - (UITextField *(^)(MK_INTEGER)) tf_maxLength { MK_RETURNNIL; }
-- (UITextField *(^)()) tf_notification { MK_RETURNNIL; }
-- (UITextField *(^)()) tf_removeNotification { MK_RETURNNIL; }
 - (UITextField *(^)(MKShouldReturnBlock)) tf_optionBlock { MK_RETURNNIL; }
 - (UITextField *(^)(MKTextChangeBlock)) tf_changeBlock { MK_RETURNNIL; }
 @end

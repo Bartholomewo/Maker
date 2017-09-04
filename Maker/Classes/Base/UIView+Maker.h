@@ -129,10 +129,6 @@
 /// 附加函数
 /** 设置TextField的字数限制 如果要使用字符限制需要设置tf_notification tf_delegate*/
 - (UITextField *(^)(MK_INTEGER)) tf_maxLength;
-/** 设置TextField的通知 */
-- (UITextField *(^)()) tf_notification;
-/** 去除TextField的通知 */
-- (UITextField *(^)()) tf_removeNotification;
 /** 点击return search的功能按钮时候的回调 */
 - (UITextField *(^)(MKShouldReturnBlock)) tf_optionBlock;
 /** 设置TextField文字变化的block */

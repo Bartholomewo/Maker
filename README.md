@@ -28,5 +28,4 @@ forkingghost, kuma15@163.com
 
 Maker is available under the MIT license. See the LICENSE file for more info.
 =======
-# Maker2
-Maker的Pod版，支持CocoaPod引入
+# Maker

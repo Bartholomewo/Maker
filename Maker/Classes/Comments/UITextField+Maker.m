@@ -131,23 +131,6 @@
         return self;
     };
 }
-- (UITextField *(^)()) tf_notification {
-    return ^(id observer) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(textFiledEditChanged:)
-                                                     name:UITextFieldTextDidChangeNotification
-                                                   object:nil];
-        return self;
-    };
-}
-- (UITextField *(^)()) tf_removeNotification {
-    return ^() {
-        [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                        name:UITextFieldTextDidChangeNotification
-                                                      object:nil];
-        return self;
-    };
-}
 - (UITextField *(^)(MKShouldReturnBlock)) tf_optionBlock  {
     return ^(MKShouldReturnBlock block) {
         self.mk_shouldReturnBlock = block;
@@ -156,7 +139,11 @@
 }
 - (UITextField *(^)(MKTextChangeBlock)) tf_changeBlock {
     return ^(MKTextChangeBlock block) {
+        if (!block) {
+            return self;
+        }
         self.mk_textChangeBlock = block;
+        [self addTarget:self action:@selector(textFiledEditChanged:) forControlEvents:UIControlEventValueChanged | UIControlEventEditingChanged];
         return self;
     };
 }
@@ -182,8 +169,8 @@
     return modifiedString;
 }
 
-- (void)textFiledEditChanged:(NSNotification *)noti {
-    UITextField *textField = (UITextField *)noti.object;
+- (void)textFiledEditChanged:(UITextField *)textField {
+//    UITextField *textField = (UITextField *)noti.object;
     [self validationText:textField];
 }
 
