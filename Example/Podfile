@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Maker_Example' do
+  pod 'Maker', :path => '../'
+
+  target 'Maker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
