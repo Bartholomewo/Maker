@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Maker
 
 [![CI Status](http://img.shields.io/travis/forkingghost/Maker.svg?style=flat)](https://travis-ci.org/forkingghost/Maker)
@@ -27,3 +28,7 @@ forkingghost, kuma15@163.com
 ## License
 
 Maker is available under the MIT license. See the LICENSE file for more info.
+=======
+# Maker2
+Maker的Pod版，支持CocoaPod引入
+>>>>>>> a5af4577fc54fd50e176280f285caf347f936fa6
